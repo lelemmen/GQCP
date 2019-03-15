@@ -12,6 +12,7 @@ set(PROJECT_SOURCE_FILES
         ${PROJECT_SOURCE_FOLDER}/Basis/BasisFunction.cpp
         ${PROJECT_SOURCE_FOLDER}/Basis/BasisSet.cpp
         ${PROJECT_SOURCE_FOLDER}/Basis/CartesianGTO.cpp
+        ${PROJECT_SOURCE_FOLDER}/Basis/Contraction.cpp
         ${PROJECT_SOURCE_FOLDER}/Basis/Shell.cpp
 
         ${PROJECT_SOURCE_FOLDER}/CISolver/CISolver.cpp
