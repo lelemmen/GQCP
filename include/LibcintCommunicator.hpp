@@ -13,7 +13,7 @@ namespace GQCP {
  */
 class LibcintCommunicator {
 public:
-    void test() const;
+    OneElectronOperator<double> calculateOverlapIntegrals() const;
 };
 
 

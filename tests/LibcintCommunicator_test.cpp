@@ -36,10 +36,7 @@ BOOST_AUTO_TEST_CASE ( sandbox ) {
 
     GQCP::AOBasis aobasis (mol, "STO-3G");
     auto S = GQCP::LibintCommunicator::get().calculateOverlapIntegrals(aobasis);
-    std::cout << "Libint S: " << std::endl << S << std::endl << std::endl;;
-
-
 
     GQCP::LibcintCommunicator libcint;
-    libcint.test();
+    BOOST_CHECK(S.isApprox(libcint.calculateOverlapIntegrals(), 1.0e-08));
 }

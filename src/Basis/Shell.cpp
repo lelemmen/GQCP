@@ -1,11 +1,3 @@
-//
-//  Shell.cpp
-//  gqcp
-//
-//  Created by Laurent Lemmens on 14/03/2019.
-//  Copyright © 2019 Laurent Lemmens. All rights reserved.
-//
-
 #include "Basis/Shell.hpp"
 
 
@@ -34,8 +26,25 @@ Shell::Shell(const Atom& atom, const std::vector<double>& exponents, const std::
  *  PUBLIC METHODS
  */
 
+/**
+ *  @return the number of contractions corresponding to this shell
+ */
 size_t Shell::numberOfContractions() const {
     return this->contractions.size();
+}
+
+
+/**
+ *  @return the number of basis functions that are in this shell
+ */
+size_t Shell::numberOfBasisFunctions() const {
+
+    size_t nbf {};
+    for (const auto& contraction : this->contractions) {
+        nbf += contraction.numberOfBasisFunctions();
+    }
+
+    return nbf;
 }
 
 

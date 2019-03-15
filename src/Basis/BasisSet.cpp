@@ -63,11 +63,11 @@ size_t BasisSet::numberOfShells() const {
 /**
  *  @return the number of basis functions in this basisset
  */
-size_t BasisSet::number_of_basis_functions() const {
+size_t BasisSet::numberOfBasisFunctions() const {
     size_t number_of_basis_functions = 0;
-    for (const auto& shell : this) {
+    for (const auto& shell : *this) {
         for (const auto& contraction : shell.get_contractions()) {
-            number_of_basis_functions += contraction.number_of_basis_functions;
+            number_of_basis_functions += contraction.numberOfBasisFunctions();
         }
     }
     return number_of_basis_functions;
@@ -94,6 +94,23 @@ std::vector<Atom> BasisSet::atoms() const {
     return atoms;
 }
 
+
+/**
+ *  @param shell_index      the index of the shell
+ *
+ *  @return the (total basis function) index that corresponds to the first basis function in the given shell
+ */
+size_t BasisSet::basisFunctionIndex(size_t shell_index) const {
+
+    size_t bf_index {};
+
+    // Count the number of basis functions before 
+    for (size_t i = 0; i < shell_index; i++) {
+        bf_index += this->operator[](i).numberOfBasisFunctions();
+    }
+
+    return bf_index;
+}
 
 
 }  // namespace GQCP

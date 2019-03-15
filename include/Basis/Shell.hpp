@@ -32,6 +32,11 @@ public:
      *  @return the number of contractions corresponding to this shell
      */
     size_t numberOfContractions() const;
+
+    /**
+     *  @return the number of basis functions that are in this shell
+     */
+    size_t numberOfBasisFunctions() const;
 };
 
 

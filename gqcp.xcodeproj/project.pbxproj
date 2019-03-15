@@ -340,7 +340,6 @@
 		561401C421B06663002C5D40 /* PlainRHFSCFSolver_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB4B21B02EDE002C5D40 /* PlainRHFSCFSolver_test.cpp */; };
 		561401C521B0666B002C5D40 /* RHF_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB4C21B02EDE002C5D40 /* RHF_test.cpp */; };
 		561401C621B0667D002C5D40 /* WaveFunction_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB8B21B02EDE002C5D40 /* WaveFunction_test.cpp */; };
-		561401C721B0668F002C5D40 /* AOBasis_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB4021B02EDE002C5D40 /* AOBasis_test.cpp */; };
 		561401C821B06696002C5D40 /* Atom_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB3E21B02EDE002C5D40 /* Atom_test.cpp */; };
 		561401C921B0669D002C5D40 /* elements_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB5D21B02EDE002C5D40 /* elements_test.cpp */; };
 		561401CA21B066A6002C5D40 /* JacobiRotationParameters_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FB3D21B02EDE002C5D40 /* JacobiRotationParameters_test.cpp */; };
@@ -546,6 +545,7 @@
 		5667C36B223B857B00955DD1 /* libmkl_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5667C369223B857B00955DD1 /* libmkl_core.a */; };
 		5667C36D223B859400955DD1 /* libiomp5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5667C36C223B859400955DD1 /* libiomp5.a */; };
 		5667C36F223BD86000955DD1 /* Contraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5667C36E223BD86000955DD1 /* Contraction.cpp */; };
+		5667C372223BDC6900955DD1 /* LibcintCommunicator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5667C371223BDC6900955DD1 /* LibcintCommunicator.cpp */; };
 		566D229E21B7ED2500F8EB91 /* oo_doci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5614FAA721B02E48002C5D40 /* oo_doci.cpp */; };
 		56884F4D222BB3FB00F68062 /* Matrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56884F4C222BB3FB00F68062 /* Matrix.hpp */; };
 		56884F4F222BB58400F68062 /* Tensor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56884F4E222BB58400F68062 /* Tensor.hpp */; };
@@ -2836,7 +2836,6 @@
 		5614FB3D21B02EDE002C5D40 /* JacobiRotationParameters_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JacobiRotationParameters_test.cpp; sourceTree = "<group>"; };
 		5614FB3E21B02EDE002C5D40 /* Atom_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Atom_test.cpp; sourceTree = "<group>"; };
 		5614FB3F21B02EDE002C5D40 /* LibintCommunicator_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LibintCommunicator_test.cpp; sourceTree = "<group>"; };
-		5614FB4021B02EDE002C5D40 /* AOBasis_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AOBasis_test.cpp; sourceTree = "<group>"; };
 		5614FB4221B02EDE002C5D40 /* RMP2_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RMP2_test.cpp; sourceTree = "<group>"; };
 		5614FB4421B02EDE002C5D40 /* SelectedFockSpace_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SelectedFockSpace_test.cpp; sourceTree = "<group>"; };
 		5614FB4521B02EDE002C5D40 /* FockSpace_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FockSpace_test.cpp; sourceTree = "<group>"; };
@@ -3005,6 +3004,9 @@
 		5667C369223B857B00955DD1 /* libmkl_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmkl_core.a; path = ../../../../../opt/intel/compilers_and_libraries_2018.0.104/mac/mkl/lib/libmkl_core.a; sourceTree = "<group>"; };
 		5667C36C223B859400955DD1 /* libiomp5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiomp5.a; path = ../../../../../opt/intel/compilers_and_libraries_2018.0.104/mac/compiler/lib/libiomp5.a; sourceTree = "<group>"; };
 		5667C36E223BD86000955DD1 /* Contraction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Contraction.cpp; sourceTree = "<group>"; };
+		5667C371223BDC6900955DD1 /* LibcintCommunicator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LibcintCommunicator.cpp; sourceTree = "<group>"; };
+		5667C375223BEDBF00955DD1 /* AOBasis_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AOBasis_test.cpp; sourceTree = "<group>"; };
+		5667C376223BEDBF00955DD1 /* BasisSet_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasisSet_test.cpp; sourceTree = "<group>"; };
 		56884F4C222BB3FB00F68062 /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		56884F4E222BB58400F68062 /* Tensor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tensor.hpp; sourceTree = "<group>"; };
 		56884F50222BDB2000F68062 /* Matrix_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix_test.cpp; sourceTree = "<group>"; };
@@ -4224,13 +4226,13 @@
 				5614F9B921B029FB002C5D40 /* elements.hpp */,
 				56FBA0E821C2DFC00084F088 /* HoppingMatrix.hpp */,
 				5614F9B521B029FB002C5D40 /* JacobiRotationParameters.hpp */,
+				5667C34F223AFC7B00955DD1 /* LibcintCommunicator.hpp */,
 				5614F9AF21B029FB002C5D40 /* LibintCommunicator.hpp */,
 				5614F9D021B029FB002C5D40 /* Molecule.hpp */,
 				5614F9B821B029FB002C5D40 /* OrbitalOptimizationOptions.hpp */,
 				5614F9B721B029FB002C5D40 /* RMP2.hpp */,
 				5614F9B621B029FB002C5D40 /* typedefs.hpp */,
 				5614F9B421B029FB002C5D40 /* units.hpp */,
-				5667C34F223AFC7B00955DD1 /* LibcintCommunicator.hpp */,
 			);
 			name = singles;
 			sourceTree = "<group>";
@@ -4243,6 +4245,7 @@
 				5614F9D521B029FB002C5D40 /* elements.cpp */,
 				56FBA0E621C2DFB40084F088 /* HoppingMatrix.cpp */,
 				5614F9D321B029FB002C5D40 /* JacobiRotationParameters.cpp */,
+				5667C371223BDC6900955DD1 /* LibcintCommunicator.cpp */,
 				5614F9DF21B029FB002C5D40 /* LibintCommunicator.cpp */,
 				5614F9D721B029FB002C5D40 /* Molecule.cpp */,
 				5614F9D421B029FB002C5D40 /* RMP2.cpp */,
@@ -4358,6 +4361,7 @@
 		5614FB3C21B02EDE002C5D40 /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				5667C374223BEDBF00955DD1 /* Basis */,
 				5614FB7E21B02EDE002C5D40 /* CISolver */,
 				56288CE02201C68400403B47 /* CMakeLists.txt */,
 				5614FB5F21B02EDE002C5D40 /* data */,
@@ -4527,7 +4531,6 @@
 		5614FB9321B02EF1002C5D40 /* singles */ = {
 			isa = PBXGroup;
 			children = (
-				5614FB4021B02EDE002C5D40 /* AOBasis_test.cpp */,
 				5614FB3E21B02EDE002C5D40 /* Atom_test.cpp */,
 				5696302F2226CDDF0019DEAD /* CartesianGTO_test.cpp */,
 				5614FB5D21B02EDE002C5D40 /* elements_test.cpp */,
@@ -4669,6 +4672,15 @@
 				562241E32225B3DC001436D0 /* CartesianGTO.cpp */,
 				5667C36E223BD86000955DD1 /* Contraction.cpp */,
 				5667C33A223AB48300955DD1 /* Shell.cpp */,
+			);
+			path = Basis;
+			sourceTree = "<group>";
+		};
+		5667C374223BEDBF00955DD1 /* Basis */ = {
+			isa = PBXGroup;
+			children = (
+				5667C375223BEDBF00955DD1 /* AOBasis_test.cpp */,
+				5667C376223BEDBF00955DD1 /* BasisSet_test.cpp */,
 			);
 			path = Basis;
 			sourceTree = "<group>";
@@ -6872,7 +6884,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561401C721B0668F002C5D40 /* AOBasis_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6993,6 +7004,7 @@
 				5614FA5221B029FB002C5D40 /* DIISRHFSCFSolver.cpp in Sources */,
 				56D63094221FE5F1001081EB /* FrozenFockSpace.cpp in Sources */,
 				5614FA5C21B029FB002C5D40 /* RDMCalculator.cpp in Sources */,
+				5667C372223BDC6900955DD1 /* LibcintCommunicator.cpp in Sources */,
 				5643B82021F88A0B00E1741F /* BaseAP1roGSolver.cpp in Sources */,
 				5614FA4C21B029FB002C5D40 /* BaseFockSpace.cpp in Sources */,
 				5614FA5921B029FB002C5D40 /* FCIRDMBuilder.cpp in Sources */,
