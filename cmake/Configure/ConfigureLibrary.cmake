@@ -28,6 +28,9 @@ if (USE_MKL)
     target_link_libraries(${LIBRARY_NAME} PUBLIC ${MKL_LIBRARIES})
 endif()
 
+# Include libcint
+target_include_directories(${LIBRARY_NAME} PUBLIC ${Libcint_INCLUDE_DIRS})
+target_link_libraries(${LIBRARY_NAME} PUBLIC ${Libcint_LIBRARIES})
 
 
 # 2. Install the library

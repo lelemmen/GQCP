@@ -5,6 +5,7 @@ find_package(Git REQUIRED)
 find_package(Boost REQUIRED COMPONENTS program_options)
 find_package(Eigen3 3.3.4 REQUIRED)
 find_package(Libint2 REQUIRED)
+find_package(Libcint REQUIRED)
 find_package(Spectra REQUIRED)
 
 if (BUILD_DOCS)

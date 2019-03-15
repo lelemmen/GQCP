@@ -69,12 +69,21 @@ install:
 
     # Install a recent version of CMake, Boost and eigen if they are not yet already installed.
     - if [ ! -f $HOME/miniconda/bin/cmake ]; then
-        conda install -c conda-forge cmake boost-cpp eigen;
+        conda install -c conda-forge cmake boost-cpp eigen blas lapack numpy;
         conda install -c gqcg libint;
       else
         echo "Using already installed packages.";
       fi
     - export LIBINT_DATA_PATH=${HOME}/miniconda/share/libint/2.3.1/basis
+
+
+    # Install
+    - mkdir /tmp/cint && cd /tmp/cint
+    - git clone http://github.com/sunqm/libcint.git && cd libcint
+    - mkdir build && cd build
+    - cmake ..
+    - make -j 3 && sudo make install
+
 
     # Install google benchmark
     - mkdir /tmp/bench && cd /tmp/bench
