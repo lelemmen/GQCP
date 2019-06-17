@@ -146,12 +146,22 @@ void AP1roGJacobiOrbitalOptimizer::calculateJacobiCoefficients(const Hamiltonian
         this->B3 = 0.0;
         this->C3 = 0.0;
 
+        std::cout << "G: " << std::endl << G.asMatrix() << std::endl;
+
 
         for (size_t j = 0; j < this->N_P; j++) {
             this->A3 -= 0.5 * (g(j,p,j,p) - g(j,q,j,q)) * (G(j,p) - G(j,q));
             this->B3 += 0.5 * (g(j,p,j,p) - g(j,q,j,q)) * (G(j,p) - G(j,q));
             this->C3 += g(j,p,j,q) * (G(j,q) - G(j,p));
+
+            if (p == 8 && q == 7) {
+                std::cout << "\t 1: " << g(j,p,j,p) - g(j,q,j,q) << std::endl;
+                std::cout << "\t 2: " << (G(j,p) - G(j,q)) << std::endl;
+                std::cout << "\t B3: " << this->B3 << std::endl;
+            }
         }
+
+
     }
 
     else {  // this means that p <= q
@@ -230,6 +240,9 @@ double AP1roGJacobiOrbitalOptimizer::calculateOptimalRotationAngle(const Hamilto
     // Virtual-virtual rotations: if p > N_P and q > N_P for computers
     else if ((p >= this->N_P) && (q >= this->N_P )) {
         const double denominator = std::sqrt(std::pow(this->B3, 2) + std::pow(this->C3, 2));
+        std::cout << "p,q:" << p << ',' << q << std::endl;
+        std::cout << "B3: " << this->B3 << " C3: " << this->C3 << std::endl;
+        std::cout << "denominator: " << denominator << std::endl;
         return 0.5 * std::atan2(-this->C3 / denominator, -this->B3 / denominator);  // std::atan2(y,x) = tan^-1(y/x)
     }
 

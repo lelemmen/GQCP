@@ -111,6 +111,8 @@ std::pair<JacobiRotationParameters, double> JacobiOrbitalOptimizer::calculateOpt
         }
     }
 
+    std::cout << "Jacobi parameters: " << queue.top().first << std::endl;
+
     return queue.top();
 }
 

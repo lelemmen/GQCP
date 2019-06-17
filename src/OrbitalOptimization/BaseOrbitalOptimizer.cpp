@@ -56,6 +56,7 @@ void BaseOrbitalOptimizer::optimize(HamiltonianParameters<double>& ham_par) {
     size_t number_of_oo_iterations {0};
     while (this->prepareConvergenceChecking(ham_par), !this->checkForConvergence(ham_par)) {  // result of the comma operator is the second operand, if not converged
         const auto U = this->calculateNewRotationMatrix(ham_par);
+        std::cout << U << std::endl;
         ham_par.rotate(U);
 
         number_of_oo_iterations++;

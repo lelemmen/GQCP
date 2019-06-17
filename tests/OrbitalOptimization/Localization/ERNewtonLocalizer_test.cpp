@@ -39,7 +39,7 @@ BOOST_AUTO_TEST_CASE ( localization_index_raises ) {
 
     double D_before = mol_ham_par.calculateEdmistonRuedenbergLocalizationIndex(N_P);
 
-    auto hessian_modifier = std::make_shared<GQCP::UnalteringHessianModifier>();
+    auto hessian_modifier = std::make_shared<GQCP::IterativeIdentitiesHessianModifier>();
     GQCP::ERNewtonLocalizer localizer (N_P, hessian_modifier, 1.0e-04);
     localizer.optimize(mol_ham_par);  // if converged, the Hamiltonian parameters are in the localized basis
 
