@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Introduction for developers · GQCP</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Welcome to the developer documentation! Here, we&#x27;ll guide you through the design of the C++ library and the Python bindings."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Introduction for developers · GQCP"/><meta property="og:type" content="website"/><meta property="og:url" content="https://GQCG.github.io/GQCP/"/><meta property="og:description" content="Welcome to the developer documentation! Here, we&#x27;ll guide you through the design of the C++ library and the Python bindings."/><meta property="og:image" content="https://GQCG.github.io/GQCP/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://GQCG.github.io/GQCP/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/GQCP/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://GQCG.github.io/GQCP/blog/atom.xml" title="GQCP Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://GQCG.github.io/GQCP/blog/feed.xml" title="GQCP Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/GQCP/js/scrollSpy.js"></script><link rel="stylesheet" href="/GQCP/css/main.css"/><script src="/GQCP/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/GQCP/"><img class="logo" src="/GQCP/img/favicon.ico" alt="GQCP"/><h2 class="headerTitleWithLogo">GQCP</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/GQCP/docs/documentation" target="_self">Documentation</a></li><li class=""><a href="/GQCP/docs/doc4" target="_self">API</a></li><li class=""><a href="/GQCP/help" target="_self">Help</a></li><li class=""><a href="/GQCP/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Developer documentation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/documentation">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">User documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_getting_started">Getting started</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_molecules">Molecules</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_orbital_bases">Orbital bases</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/use_cases">Common use cases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/developer_documentation/developer_getting_started">Getting started</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/GQCP/docs/developer_documentation/developer_introduction">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/troubleshooting/troubleshooting">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Introduction for developers</h1></header><article><div><span><p>Welcome to the developer documentation! Here, we'll guide you through the design of the C++ library and the Python bindings.</p>
+<p>GQCP has two main components: the C++ library <code>gqcp</code> and its associated Python bindings <code>gqcpy</code>, which is reflected in the folder structure of the GitHub: files that belong to <code>gqcp</code> can be found in the <code>./gqcp</code> folder and files that belong <code>gqcpy</code> can be found in the <code>./gqcpy</code> folder. Pretty straightforward.</p>
+<blockquote>
+<p><strong>Note</strong>: Here <code>./</code> means the root folder of the repository, i.e. the one that is created after cloning this repository.</p>
+</blockquote>
+<p>The <code>./gqcp</code>-folder has three main parts:</p>
+<ul>
+<li><code>./gqcp/include</code>, which collects all C++ header files (<code>*.hpp</code>)</li>
+<li><code>./gqcp/src</code>, which collects all C++ source files (<code>*.cpp</code>)</li>
+<li><code>./gqcp/tests</code>, which collects all our C++ unit tests (<code>*_test.cpp</code>)</li>
+</ul>
+<p>The Python bindings don't require any headers, so we only have two subfolders of <code>./gqcpy</code>:</p>
+<ul>
+<li><code>./gqcpy/src</code>, which collects all C++ source files that are used to generate the bindings (<code>*_bindings.cpp</code>)</li>
+<li><code>./gqcpy/examples</code>, which collects some illustrative calculations in Jupyter Notebooks.</li>
+</ul>
+<p>Inside these folders, we have added the following structure:</p>
+<ul>
+<li><strong>Basis</strong>: for everything related to spinors, spinor basis and transformations</li>
+<li><strong>Mathematical</strong>: for general mathematical utilities, not directly related to quantum chemistry</li>
+<li><strong>Molecule</strong>: for everything related to molecules and nuclei</li>
+<li><strong>ONVBasis</strong>: for everything related to ONVs and bases for Fock (sub)spaces</li>
+<li><strong>Operator</strong>: for everything related to first- and second-quantized operators</li>
+<li><strong>Processing</strong>: for collecting everything that happens <em>after</em> the determination of the optimal values of the electronic structure model's parameters</li>
+<li><strong>QCMethod</strong>: for the determination of the optimal parameters of an electronic structure model</li>
+<li><strong>Utilities</strong>: for collecting general utilities that do not belong elsewhere</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="general-structure-of-the-c-library"></a><a href="#general-structure-of-the-c-library" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General structure of the C++ library</h2>
+<p>In this section, we will go over the main aspects of the C++ library.
+It is meant as an introduction to the source code for interested users, but mainly for C++ developers that are interested in how GQCP works under the hood.
+By reading this section, we assume that you are familiar with C++.</p>
+<h3><a class="anchor" aria-hidden="true" id="second-quantized-operators"></a><a href="#second-quantized-operators" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Second-quantized operators</h3>
+<p>Since the GQCP source code uses concepts related to second quantization, we should start by examining the core objects <code>SQOneElectronOperator</code> and <code>SQTwoElectronOperator</code>: the prefix 'SQ' means 'second-quantized', we have used it in order to somewhat abbreviate the class names.
+<code>SQOperator</code>, which is not a real class but is used to refer to either <code>SQOneElectronOperator</code> or <code>SQTwoElectronOperator</code>, encapsulates the integrals/parameters that are present in the corresponding second-quantized expression, so there must be a way to create an <code>SQOperator</code> from its integrals/parameters.
+Let us go through a small snippet to create an <code>SQOneElectronOperator</code>.</p>
+<pre><code class="hljs css language-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;gqcp.hpp&gt;</span></span>
+
+
+<span class="hljs-comment">// Initialize a matrix and convert it into an operator</span>
+<span class="hljs-function">GQCP::QCMatrix&lt;<span class="hljs-keyword">double</span>&gt; <span class="hljs-title">M</span> <span class="hljs-params">(<span class="hljs-number">2</span>)</span></span>;  <span class="hljs-comment">// the matrix representation</span>
+M &lt;&lt; <span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>,
+     <span class="hljs-number">3.0</span>, <span class="hljs-number">4.0</span>;
+
+<span class="hljs-keyword">const</span> GQCP::ScalarSQOneElectronOperator&lt;<span class="hljs-keyword">double</span>&gt; op {M};  <span class="hljs-comment">// the operator itself</span>
+</code></pre>
+<p>If the syntax for the matrix-related objects feels familiar for other C++ developers, it might be because we use the amazing linear algebra library <a href="http://eigen.tuxfamily.org">Eigen</a> for representing vectors, matrices and tensors and performing BLAS/LAPACK operations.
+In this example, we first create a matrix representation using Eigen's syntax and afterwards create an <code>SQOneElectronOperator</code> from it.
+<code>SQOneElectronOperator</code> is actually a class template, which has two template arguments.
+The first one is the underlying type of the matrix elements/integrals/parameters, and the second is the number of components the operator has.
+We are most often working with <code>SQOperator</code>s with only one component, like the kinetic energy operator, or the Coulomb repulsion operator, but occasionally, we work with electronic dipole operators as well.
+You might have guessed, but <code>ScalarSQOperator</code> is just an alias, which for <code>SQOneElectronOperator</code> is written as follows:</p>
+<pre><code class="hljs css language-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> Scalar&gt;
+<span class="hljs-keyword">using</span> ScalarSQOneElectronOperator = SQOneElectronOperator&lt;Scalar, <span class="hljs-number">1</span>&gt;;
+</code></pre>
+<p>In order to access the underlying integrals/parameters/matrix elements, we use the API <code>.parameters(component_index)</code> or <code>.allParameters()</code>. Building on the previous example, we can now write the following.</p>
+<pre><code class="hljs css language-cpp">#include &lt;gqcp.hpp&gt;
+
+
+// Initialize two matrices and convert them into the two components of an operator
+GQCP::QCMatrix&lt;double&gt; M1 (2);  // the first matrix representation
+M1 &lt;&lt; 1.0, 2.0,
+      3.0, 4.0;
+
+GQCP::QCMatrix&lt;double&gt; M2 = GQCP::QCMatrix&lt;double&gt;::Identity(2);  // the second first matrix representation
+
+
+// Construct an operator with two components
+const GQCP::SQOneElectronOperator&lt;double, 2&gt; op ({M1, 2*M1*M2});  // note that we can naturally work with multiplications of matrices thanks to QCMatrix inheriting from Eigen
+
+
+const auto all_components = op.allParameters();  // return all the components
+std::cout &lt;&lt; op.parameters(1)(0,1) &lt;&lt; std::endl;  // access the element (0,1) of the first component: this should print '2'
+</code></pre>
+<p>We should note that this type of access both works in a read-only and a write way.</p>
+<h3><a class="anchor" aria-hidden="true" id="flexible-solver-algorithms"></a><a href="#flexible-solver-algorithms" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flexible solver algorithms</h3>
+<p>In GQCP, we have chosen for a flexible solver design instead of only providing our users with our implementations of certain optimization algorithms, like RHF SCF or Newton-step based minimizers.</p>
+<p>The first class we will discuss is the <code>IterativeSolver</code>. At its core, it provides the implementation of <code>.perform()</code>, which iterates until the maximum number of allowed iterations is reached, or the convergence criterion is reached. In every iteration step, it will check if the convergence criterion is fulfilled, and if it is not, it will continue to execute all the steps in its <code>StepCollection</code>.</p>
+<p>Convergence criteria can be implemented by deriving from <code>ConvergenceCriterion</code> and implementing its <code>isFulfilled()</code> method. An example for RHF SCF would be to check the norm on two subsequent density matrices. One important realization is that the iteration steps and the convergence criteria must be able to access the information that the algorithm in its entirety produces. For RHF SCF, this would be the coefficient matrices, the density matrices, the Fock matrices, etc. That is why every <code>IterativeSolver</code>, its <code>StepCollection</code>, its <code>Step</code>s and <code>ConvergenceCriterion</code> must all be defined with respect to an <code>Environment</code>, which is the template parameter that should be attached to each of these classes.</p>
+<p>An example can make many things clear. Suppose we would like to do an RHF SCF calculation. The code that creates our suggested type of plain RHF SCF solver is the following:</p>
+<pre><code class="hljs css language-cpp">IterativeAlgorithm&lt;Environment&gt; Plain(const double threshold = 1.0e-08, const size_t maximum_number_of_iterations = 128) {
+
+    // Create the iteration cycle that effectively 'defines' a plain RHF SCF solver
+    StepCollection&lt;RHFSCFEnvironment&lt;Scalar&gt;&gt; plain_rhf_scf_cycle {};
+    plain_rhf_scf_cycle.add(RHFDensityMatrixCalculation&lt;Scalar&gt;())
+                        .add(RHFFockMatrixCalculation&lt;Scalar&gt;())
+                        .add(RHFFockMatrixDiagonalization&lt;Scalar&gt;())
+                        .add(RHFElectronicEnergyCalculation&lt;Scalar&gt;());
+
+    // Create a convergence criterion on the norm of subsequent density matrices
+    const auto density_matrix_extractor = [] (const RHFSCFEnvironment&lt;Scalar&gt;&amp; environment) { return environment.density_matrices; };
+    const ConsecutiveIteratesNormConvergence&lt;OneDM&lt;Scalar&gt;, RHFSCFEnvironment&lt;Scalar&gt;&gt; convergence_criterion (threshold, density_matrix_extractor);
+
+    return IterativeAlgorithm&lt;RHFSCFEnvironment&lt;Scalar&gt;&gt;(plain_rhf_scf_cycle, convergence_criterion, maximum_number_of_iterations);
+}
+</code></pre>
+<p>The reader might confirm that the code is clear: in every iteration, the algorithm will check the convergence on the density matrices (cfr <code>ConsecutiveIteratesNormConvergence</code> with a suitable iterate extractor). If the algorithm has not converged, an iteration cycle continues in which the following happens:</p>
+<ol>
+<li>The RHF density matrix is calculated (from the most recent coefficient matrix)</li>
+<li>The RHF Fock matrix is calculated (from the most recent density matrix);</li>
+<li>The RHF Fock matrix is diagonalized (to yield a new coefficient matrix);</li>
+<li>RHF energy is calculated (from the most recent coefficient matrix).</li>
+</ol>
+<p>From this example, we can see that every <code>StepCollection</code> consists of <code>Step</code>s. Each of these <code>Step</code>s are instances of classes with an implemented <code>.execute(Environment)</code> method that usually 1) read from the environment, 2) calculate some value, 3) write to the environment, but the user is always free to implement his or her desires.</p>
+<p>As a conclusion, we have achieved, in essence, a run-time specification of iterative algorithms and we therefore provide the highest amount of flexibility for the (knowing) user to experiment with different solver algorithms. We will continue to provide default implementations, but if a user requires a new kind of algorithm, i.e. one that requires a new kind of environment, he or she only has to implement a new type of <code>Environment</code> and the necessary <code>Step</code>s.</p>
+<h3><a class="anchor" aria-hidden="true" id="quantum-chemical-methods-and-models"></a><a href="#quantum-chemical-methods-and-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quantum chemical methods and models</h3>
+<p>We define a quantum chemical model as a set of related electronic structure models with the same classes of parameters. For example, the RHF wave function model can be mathematically written as the orbital rotation operator acting on the closed-shell reference determinant. Its parameters are all the (occupied-virtual) orbital rotation generators. When we optimize a quantum chemical method, such that a certain objective is fulfilled, we have found its 'optimal parameters'.</p>
+<p>In the <code>C++</code> code, a <code>QCModel</code> is a hypothetical class (i.e. it does not really exist) that allows us to express all the variations for the electronic structure model. Coupled to <code>QCModel</code>, we inseparably have the class <code>QCObjective</code>. Let's take a look at the essential source code.</p>
+<pre><code class="hljs css language-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> _DerivedQCObjective&gt;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">QCObjective</span> :</span>
+    <span class="hljs-keyword">public</span> CRTP&lt;_DerivedQCObjective&gt; {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-keyword">using</span> DerivedQCObjective = _DerivedQCObjective;
+
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> QCModel&gt;
+    <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">isSatisfiedWith</span><span class="hljs-params">(<span class="hljs-keyword">const</span> QCModel&amp; model_parameters)</span> <span class="hljs-keyword">const</span> </span>{
+        <span class="hljs-keyword">this</span>-&gt;derived().isSatisfiedWith(model_parameters);
+    }
+};
+</code></pre>
+<p>We see that we have made <code>QCObjective</code> a compile-time base class, whose derived classes should implement <code>isSatisfiedWith(const QCModel&amp;)</code>. The optimized parameters are then an instance of <code>QCModel</code>, such that a corresponding objective <code>isSatisfiedWith</code> it.</p>
+<p>Since we had already introduced the <code>namespace QCMethod</code>, we chose another name for the actual base class <code>QCMethodProtocol</code>, of which we'll inspect the source code.</p>
+<pre><code class="hljs css language-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> _QCModel, <span class="hljs-keyword">typename</span> _DerivedQCMethod&gt;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">QCMethodProtocol</span>:</span>
+    <span class="hljs-keyword">public</span> CRTP&lt;_DerivedQCMethod&gt; {
+
+<span class="hljs-keyword">public</span>:
+
+    <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> QCObjective, <span class="hljs-keyword">typename</span> Solver, <span class="hljs-keyword">typename</span> Environment&gt;
+    <span class="hljs-function">QCStructure&lt;QCModel&gt; <span class="hljs-title">optimize</span><span class="hljs-params">(<span class="hljs-keyword">const</span> QCObjective&amp; objective, Solver&amp; solver, Environment&amp; environment)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>-&gt;derived().optimize(objective, solver, environment);
+    }
+};
+</code></pre>
+<p>This class is thus naturally coupled to a <code>QCModel</code>. Furthermore, classes that derive from <code>QCMethodProtocol</code>, or, better: conform to it, must implement an <code>optimize()</code> method, which takes an <code>Objective</code> to allow to check if the <code>solver</code>'s solution actually produces a solution that is consistent with the objective. It's the <code>QCMethod</code>'s responsibility to construct a <code>QCModel</code> from the <code>solver</code>'s solution, which is actually stored in the corresponding <code>environment</code> and put them in a <code>QCStructure</code>, which is a collection of ground- and possibly excited state model parameters.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage-in-an-external-project"></a><a href="#usage-in-an-external-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage in an external project</h2>
+<p>In order to use the C++ We have created a small <a href="https://github.com/GQCG/GQCP-link">example</a> which showcases how to use <code>GQCP</code> in an external C++ project.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/GQCP/docs/developer_documentation/developer_getting_started"><span class="arrow-prev">← </span><span>Getting started</span></a><a class="docs-next button" href="/GQCP/docs/troubleshooting/troubleshooting"><span>Troubleshooting</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#general-structure-of-the-c-library">General structure of the C++ library</a><ul class="toc-headings"><li><a href="#second-quantized-operators">Second-quantized operators</a></li><li><a href="#flexible-solver-algorithms">Flexible solver algorithms</a></li><li><a href="#quantum-chemical-methods-and-models">Quantum chemical methods and models</a></li></ul></li><li><a href="#usage-in-an-external-project">Usage in an external project</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/GQCP/" class="nav-home"><img src="/GQCP/img/favicon.ico" alt="GQCP" width="66" height="58"/></a><div><h5>Docs</h5><a href="/GQCP/docs/doc1.html">Getting Started (or other categories)</a><a href="/GQCP/docs/doc2.html">Guides (or other categories)</a><a href="/GQCP/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/GQCP/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/GQCP/blog">Blog</a><a href="https://github.com/GQCG/GQCP">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 GQCG</section></footer></div></body></html>

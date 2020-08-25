@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting started · GQCP</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Before delving into GQCP&#x27;s structure under the hood, let&#x27;s make sure you&#x27;re set up for development to GQCP."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Getting started · GQCP"/><meta property="og:type" content="website"/><meta property="og:url" content="https://GQCG.github.io/GQCP/"/><meta property="og:description" content="Before delving into GQCP&#x27;s structure under the hood, let&#x27;s make sure you&#x27;re set up for development to GQCP."/><meta property="og:image" content="https://GQCG.github.io/GQCP/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://GQCG.github.io/GQCP/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/GQCP/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://GQCG.github.io/GQCP/blog/atom.xml" title="GQCP Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://GQCG.github.io/GQCP/blog/feed.xml" title="GQCP Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/GQCP/js/scrollSpy.js"></script><link rel="stylesheet" href="/GQCP/css/main.css"/><script src="/GQCP/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/GQCP/"><img class="logo" src="/GQCP/img/favicon.ico" alt="GQCP"/><h2 class="headerTitleWithLogo">GQCP</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/GQCP/docs/documentation" target="_self">Documentation</a></li><li class=""><a href="/GQCP/docs/doc4" target="_self">API</a></li><li class=""><a href="/GQCP/help" target="_self">Help</a></li><li class=""><a href="/GQCP/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Developer documentation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/documentation">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">User documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_getting_started">Getting started</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_molecules">Molecules</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/user_orbital_bases">Orbital bases</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/user_documentation/use_cases">Common use cases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer documentation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/GQCP/docs/developer_documentation/developer_getting_started">Getting started</a></li><li class="navListItem"><a class="navItem" href="/GQCP/docs/developer_documentation/developer_introduction">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/GQCP/docs/troubleshooting/troubleshooting">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Getting started</h1></header><article><div><span><p>Before delving into GQCP's structure under the hood, let's make sure you're set up for development to GQCP.</p>
+<h2><a class="anchor" aria-hidden="true" id="cloning-the-repository"></a><a href="#cloning-the-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cloning the repository</h2>
+<p>For GQCP, we use the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> workflow. All features are therefore based on the <code>develop</code> branch, which contains the latest developments.</p>
+<pre><code class="hljs css language-bash">git <span class="hljs-built_in">clone</span> https://github.com/GQCG/GQCP.git --branch develop --single-branch --recurse-submodules
+<span class="hljs-built_in">cd</span> GQCP
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installing-dependencies"></a><a href="#installing-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing dependencies</h2>
+<p>Please make sure the following dependencies are available on your system:</p>
+<p><a href="http://www.boost.org"><img src="https://img.shields.io/badge/Boost-&lt;=1.69-000000.svg" alt="Boost Dependency"></a>
+<a href="http://eigen.tuxfamily.org/index.php?title=Main_Page"><img src="https://img.shields.io/badge/Eigen-3.3.4+-000000.svg" alt="Eigen3 Dependency"></a>
+<a href="https://github.com/evaleev/libint"><img src="https://img.shields.io/badge/libint-2.3.1+-000000.svg" alt="libint2 Dependency"></a>
+<a href="https://github.com/GQCG/libcint/tree/develop"><img src="https://img.shields.io/badge/gqcg_libcint-develop-000000.svg" alt="libcint Dependency"></a></p>
+<p>You may install these manually, but please note that we offer a conda environment which contains these dependencies from the start. In the root directory of this repository, create the <code>gqcp_dev</code> conda environment from the <code>environment.yml</code>-file that we provide.</p>
+<pre><code class="hljs css language-bash">conda env create -f environment.yml
+conda activate gqcp_dev
+</code></pre>
+<p>Since we (still) depend on Libint's basissets, after installation, you'll have to set the <code>LIBINT_DATA_PATH</code> environment variable to the folder that contains the libint bases. In a default installation (of Libint's version v2.3.1), the data path is given by:</p>
+<pre><code class="hljs css language-bash"><span class="hljs-built_in">export</span> LIBINT_DATA_PATH=<span class="hljs-variable">${CONDA_PREFIX}</span>/share/libint/2.3.1/basis
+</code></pre>
+<p>You will have to either export this environment variable every time you activate the <code>gqcp</code> environment or (better) put this export in your .bashrc or (preferred) <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#saving-environment-variables">add this environment variable to your virtual environment</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="building-and-installing-with-cmake"></a><a href="#building-and-installing-with-cmake" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Building and installing with CMake</h2>
+<p>Right now, you're set up for development! Typically, developing a new feature on your machine would go through the following cycle:</p>
+<ol>
+<li>You start a <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">feature branch</a>, and edit some source files;</li>
+<li>You locally compile the library and run the unit test cases in order to make sure that you haven't made any errors;</li>
+<li>You install the C++ library or its Python bindings and try out your new feature.</li>
+</ol>
+<p><a href="https://cmake.org">CMake</a> can help us out tremendously in this regard, with its out-of-source builds. Out-of-source means that we're creating a temporary folder in the root directory of this repository, so intermediary Makefiles and compiled files does not pollute our repository. Often, this folder is just called <code>build</code>, so go ahead and create an out-of-source build directory now.</p>
+<pre><code class="hljs css language-bash">mkdir build &amp;&amp; <span class="hljs-built_in">cd</span> build
+</code></pre>
+<p>Now, we let CMake do its thing by specifying all the necessary options in <code>(CMake options)</code>. (We'll go over which CMake options GQCP supports shortly.)</p>
+<pre><code class="hljs css language-bash">cmake .. (CMake options)
+</code></pre>
+<p>We'll then try to make all targets, i.e. compiling the C++ library, generating the Python bindings and compiling all tests. This is to rule out any errors in your source files, i.e. we check if the code is statically (at compile-time) correct</p>
+<pre><code class="hljs css language-bash">make all
+</code></pre>
+<blockquote>
+<p><strong>Note</strong>: The <code>all</code> is default, so it may be omitted.</p>
+</blockquote>
+<p>Once every target has been built, we can check if the code does what is expected, at run-time, by executing all unit tests. This is done by the following command.</p>
+<pre><code class="hljs css language-bash">make <span class="hljs-built_in">test</span>
+</code></pre>
+<p>Finally, we check if the C++ library and its Python bindings can be installed.</p>
+<pre><code class="hljs css language-bash">make install
+</code></pre>
+<blockquote>
+<p><strong>Note</strong>: Depending on which prefix you have specified in the CMake option <code>-DCMAKE_INSTALL_PREFIX</code>, you might have to use <code>sudo</code> in this installation step.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="cmake-options"></a><a href="#cmake-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CMake options</h3>
+<p>As promised, here is an overview of all the CMake options that GQCP supports.</p>
+<ul>
+<li><p>Specify the C compiler using <code>-DCMAKE_C_COMPILER=cc</code>, with <code>cc</code> the C-compiler that you would like to use.</p></li>
+<li><p>Specify the C++ compiler using <code>-DCMAKE_CXX_COMPILER=cxx</code>, with <code>cxx</code> the C++-compiler that you would like to use.</p></li>
+<li><p>In order to let CMake find those libraries and include headers that are not in default locations, please use the <code>-DCMAKE_PREFIX_PATH=prefix_path</code> options, with <code>prefix_path</code> the path to those libraries and includes (grouped together).</p>
+<p>If you have chosen to use conda for some dependencies, <code>prefix_path</code> should be set to e.g. <code>/anaconda3/envs/.../</code></p>
+<p>If you use a custom installation of GQCP's dependencies, you should provide this option in order to let CMake find GQCP's dependencies (libInt2, libCint, Eigen and Intel MKL), which therefore should be installed in the subfolders of <code>prefix_path</code>. For instance, providing <code>-DCMAKE_PREFIX_PATH=/usr/local</code> that any subfolders may be found (e.g. the <code>cmake</code>, <code>lib</code>, <code>lib64</code> and <code>include</code> folders).</p></li>
+<li><p>In order to control where the library should be installed, you may specify <code>-DCMAKE_INSTALL_PREFIX=prefix</code>, with <code>prefix</code> the installation prefix you want the library to be installed it. When omitted, <code>prefix</code> defaults to <code>/usr/local</code>.</p>
+<ul>
+<li>the header files will be installed in <code>prefix/include</code></li>
+<li>the compiled library will be installed in <code>prefix/lib</code></li>
+<li>drivers (optional) and benchmarks (optional) will be installed in <code>prefix/bin</code></li>
+<li>CMake target files will be installed in <code>prefix/cmake</code></li>
+</ul>
+<p>We should note that setting <code>-DCMAKE_INSTALL_PREFIX=~/.local</code> is preferred as this is also makes sure that the installed Python modules can be found automatically.</p></li>
+<li><p><code>-DBUILD_TESTS=TRUE</code> specifies that tests should be built and run.</p></li>
+<li><p><code>-DBUILD_BENCHMARKS=TRUE</code> makes sure CMake adds the benchmark executables as targets. This uses <a href="https://github.com/google/benchmark">Google benchmark</a>, so make sure you have this installed if you wish to proceed with benchmarking on your system.</p></li>
+<li><p><code>-DBUILD_DOCS=TRUE</code> specifies that the API documentation for the C++ library should be built using Doxygen, in which case Graphviz is required for UML generation. A custom <code>docs</code> target will then be configured by CMake, so that</p>
+<pre><code class="hljs">  make docs
+</code></pre>
+<p>compiles the documentation. After compilation, the HTML documentation can be found in the <code>docs/html</code> directory inside your out-of-source <code>build</code> directory. Navigating the documentation is easiest if you start with the <code>index.html</code> file.</p></li>
+<li><p><code>-DBUILD_PYTHON_BINDINGS=TRUE</code> makes sure that selected pieces of the GQCP library can be called from Python. This uses <a href="https://github.com/pybind/pybind11">pybind11</a>, so make sure you have this installed if you wish to use <code>gqcpy</code> on your system.</p></li>
+<li><p><code>-DPYTHON_EXECUTABLE=python_executable</code> with <code>python_executable</code> the path to your preferred Python executable.</p></li>
+<li><p><code>-DPYTHON_LIBRARY=python_library</code> with <code>python_library</code> the path to the libraries that support your preferred Python executable.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="cmake-options---quick-reference"></a><a href="#cmake-options---quick-reference" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CMake options - quick reference</h3>
+<p>As you can see, there are a lot of options that can (and should) be passed to CMake. For quick reference, here's a command that should work most of the time. In your out-of-source build directory, initialize CMake, make all targets, run all tests and install the library:</p>
+<pre><code class="hljs css language-bash">mkdir build &amp;&amp; <span class="hljs-built_in">cd</span> build
+cmake .. -DCMAKE_PREFIX_PATH=<span class="hljs-variable">${CONDA_PREFIX}</span> \
+    -DCMAKE_INSTALL_PREFIX=~/.<span class="hljs-built_in">local</span> \
+    -DBUILD_TESTS=TRUE \ 
+    -DBUILD_PYTHON_BINDINGS=TRUE \
+    -DPYTHON_EXECUTABLE=<span class="hljs-variable">${CONDA_PREFIX}</span>/bin/python \ 
+    -DPYTHON_LIBRARY=<span class="hljs-variable">${CONDA_PREFIX}</span>/lib/libpython3.8.a
+make -j 4 &amp;&amp; make <span class="hljs-built_in">test</span> &amp;&amp; make install
+</code></pre>
+<p><code>make -j 4</code> will make sure that 4 targets will be built at once. In order to increase compilation speed, you may increase this number, related to the number of cores you have available on your machine.</p>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-visual-studio-code-optional"></a><a href="#setting-up-visual-studio-code-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up Visual Studio Code (optional)</h2>
+<p>At GQCG, our code editor of choice is <a href="https://code.visualstudio.com">Visual Studio Code</a>. VS Code allows for easy collaboration, uses built-in git commands and offers a lot of useful extensions. In order to use VS Code to collaborate on GQCP, some setup is required. This will be covered in this small step-by-step guide.</p>
+<h3><a class="anchor" aria-hidden="true" id="installing-common-extensions"></a><a href="#installing-common-extensions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing common extensions</h3>
+<p>To comfortably work on GQCP using VS Code, we recommend you to install the following extensions:</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++</a>;</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=twxs.cmake">CMake language support</a> and <a href="https://marketplace.visualstudio.com/items?itemName=gocarlos.cmake-tools">CMake Tools</a>.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="clone-the-repository--install-the-necessary-dependencies"></a><a href="#clone-the-repository--install-the-necessary-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clone the repository &amp; install the necessary dependencies</h3>
+<p>Make sure that you've <a href="#cloning-the-repository">cloned GQCP</a> and <a href="#installing-dependencies">installed GQCP's dependencies</a>. We recommend using the <code>gqcp_dev</code> conda environment, so the necessary dependencies and their paths will all be set correctly.</p>
+<h3><a class="anchor" aria-hidden="true" id="setting-up-your-c-compiler"></a><a href="#setting-up-your-c-compiler" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up your C++ compiler</h3>
+<p>We often use <a href="https://clang.llvm.org">Clang</a> 7.x.y as our C++ compiler. On macOS, this can easily be installed using <a href="https://www.macports.org">MacPorts</a>.</p>
+<pre><code class="hljs css language-bash">port install clang-7.0
+</code></pre>
+<p>After the installation, you should create a new toolkit by editing the <code>cmake-tools-kits.json</code>-file. (To open this file, open up the VS Code Command Palette and look for <code>Edit user-local CMake kits</code>).</p>
+<pre><code class="hljs css language-json">{
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Clang 7.1.0"</span>,
+    <span class="hljs-attr">"compilers"</span>: {
+        <span class="hljs-attr">"C"</span>: <span class="hljs-string">"/opt/local/bin/clang-mp-7.0"</span>,
+        <span class="hljs-attr">"CXX"</span>: <span class="hljs-string">"/opt/local/bin/clang++-mp-7.0"</span>
+    }
+}
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> The paths to your compilers may be different. You can look for them using the command <code>which clang++</code> or <code>which clang++-mp-7.0</code> for clang 7.x.y.</p>
+</blockquote>
+<p>After this is done, you can select Clang 7.1.0 as your default compiler in VS Code.</p>
+<h3><a class="anchor" aria-hidden="true" id="set-up-your-gqcp-workspace"></a><a href="#set-up-your-gqcp-workspace" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set up your GQCP workspace</h3>
+<p>After opening the GQCP folder in VS Code, select <code>File &gt; Save Workspace As...</code>, and save your workspace. This will create a folder <code>.vscode</code> with a file <code>&lt;workspace-name&gt;.code-workspace</code> in it. Within this file, make sure that CMake Tools is forwarded the correct options, i.e. make sure that the <code>&quot;settings&quot;</code> key at least contains the following options.</p>
+<pre><code class="hljs css language-json">{
+    <span class="hljs-attr">"settings"</span>: {
+        <span class="hljs-attr">"cmake.configureSettings"</span>: {
+            <span class="hljs-attr">"CMAKE_PREFIX_PATH"</span>: <span class="hljs-string">"${CONDA_PREFIX}/envs/gqcp_dev"</span>,
+            <span class="hljs-attr">"CMAKE_CXX_COMPILER"</span>: <span class="hljs-string">"/opt/local/bin/clang++-mp-7.0"</span>,
+            <span class="hljs-attr">"BUILD_TESTS"</span>: <span class="hljs-string">"TRUE"</span>,
+            <span class="hljs-attr">"BUILD_PYTHON_BINDINGS"</span>: <span class="hljs-string">"TRUE"</span>,
+            <span class="hljs-attr">"CMAKE_INSTALL_PREFIX"</span>: <span class="hljs-string">"${CONDA_PREFIX}/envs/gqcp_dev"</span>,
+            <span class="hljs-attr">"PYTHON_EXECUTABLE"</span>: <span class="hljs-string">"${CONDA_PREFIX}/envs/gqcp_dev/bin/python"</span>
+        }
+    }
+}
+</code></pre>
+<p>In order to use the C++ IntelliSense correctly, you'll also have to set the corresponding include paths. Find <code>C/C++: Edit Configurations (JSON)</code> through VS Code's Command Palette and open the configurations for your recently created workspace folder. In the <code>c_cpp_properties.json</code>-file that is opened, please make sure to update your configuration's <code>&quot;includePath&quot;</code>.</p>
+<pre><code class="hljs css language-json">{
+    <span class="hljs-attr">"configurations"</span>: [
+        {
+            <span class="hljs-attr">"includePath"</span>: [
+                <span class="hljs-string">"${CMAKE_PREFIX}/envs/gqcp_dev/include"</span>,
+                <span class="hljs-string">"${CMAKE_PREFIX}/envs/gqcp_dev/include/eigen3"</span>,
+                <span class="hljs-string">"${workspaceFolder}/gqcp/include"</span>
+            ]
+        }
+    ]
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="using-cmake-through-vs-code"></a><a href="#using-cmake-through-vs-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using CMake through VS Code</h3>
+<p>By now, you're done configuring VS Code and can start developing! If you'd like to compile the code locally to see if your tests still pass and the project can be compiled, you can use <code>CMake Tools</code> extension in your side bar and the clicking on the <code>...</code> in the upper right corner.</p>
+<p>In order to let CMake parse your project, use <code>Clean Reconfigure All Projects</code>. In the CMake: Project Outline, you can find a list of all targets, which can be built separately. If you would like to (re)build all targets, use <code>Clean Rebuild All Projects</code>.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/GQCP/docs/user_documentation/use_cases"><span class="arrow-prev">← </span><span>Common use cases</span></a><a class="docs-next button" href="/GQCP/docs/developer_documentation/developer_introduction"><span>Introduction</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#cloning-the-repository">Cloning the repository</a></li><li><a href="#installing-dependencies">Installing dependencies</a></li><li><a href="#building-and-installing-with-cmake">Building and installing with CMake</a><ul class="toc-headings"><li><a href="#cmake-options">CMake options</a></li><li><a href="#cmake-options---quick-reference">CMake options - quick reference</a></li></ul></li><li><a href="#setting-up-visual-studio-code-optional">Setting up Visual Studio Code (optional)</a><ul class="toc-headings"><li><a href="#installing-common-extensions">Installing common extensions</a></li><li><a href="#clone-the-repository--install-the-necessary-dependencies">Clone the repository &amp; install the necessary dependencies</a></li><li><a href="#setting-up-your-c-compiler">Setting up your C++ compiler</a></li><li><a href="#set-up-your-gqcp-workspace">Set up your GQCP workspace</a></li><li><a href="#using-cmake-through-vs-code">Using CMake through VS Code</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/GQCP/" class="nav-home"><img src="/GQCP/img/favicon.ico" alt="GQCP" width="66" height="58"/></a><div><h5>Docs</h5><a href="/GQCP/docs/doc1.html">Getting Started (or other categories)</a><a href="/GQCP/docs/doc2.html">Guides (or other categories)</a><a href="/GQCP/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/GQCP/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/GQCP/blog">Blog</a><a href="https://github.com/GQCG/GQCP">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 GQCG</section></footer></div></body></html>
