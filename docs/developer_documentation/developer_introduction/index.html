@@ -73,11 +73,12 @@
 <p>Inside these folders, we have added the following structure:</p>
 <ul>
 <li><strong>Basis</strong>: for everything related to spinors, spinor basis and transformations</li>
+<li><strong>DensityMatrix</strong>: for everything related to density matrices</li>
 <li><strong>Mathematical</strong>: for general mathematical utilities, not directly related to quantum chemistry</li>
 <li><strong>Molecule</strong>: for everything related to molecules and nuclei</li>
 <li><strong>ONVBasis</strong>: for everything related to ONVs and bases for Fock (sub)spaces</li>
 <li><strong>Operator</strong>: for everything related to first- and second-quantized operators</li>
-<li><strong>Processing</strong>: for collecting everything that happens <em>after</em> the determination of the optimal values of the electronic structure model's parameters</li>
+<li><strong>Processing</strong>: for collecting everything that happens <em>after</em> the determination of the optimal values of the electronic structure model's parameters, like response calculations</li>
 <li><strong>QCMethod</strong>: for the determination of the optimal parameters of an electronic structure model</li>
 <li><strong>Utilities</strong>: for collecting general utilities that do not belong elsewhere</li>
 </ul>
@@ -93,7 +94,7 @@ Let us go through a small snippet to create an <code>SQOneElectronOperator</code
 
 
 <span class="hljs-comment">// Initialize a matrix and convert it into an operator</span>
-<span class="hljs-function">GQCP::QCMatrix&lt;<span class="hljs-keyword">double</span>&gt; <span class="hljs-title">M</span> <span class="hljs-params">(<span class="hljs-number">2</span>)</span></span>;  <span class="hljs-comment">// the matrix representation</span>
+<span class="hljs-function">GQCP::SquareMatrix&lt;<span class="hljs-keyword">double</span>&gt; <span class="hljs-title">M</span> <span class="hljs-params">(<span class="hljs-number">2</span>)</span></span>;  <span class="hljs-comment">// the matrix representation</span>
 M &lt;&lt; <span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>,
      <span class="hljs-number">3.0</span>, <span class="hljs-number">4.0</span>;
 
@@ -113,15 +114,15 @@ You might have guessed, but <code>ScalarSQOperator</code> is just an alias, whic
 
 
 // Initialize two matrices and convert them into the two components of an operator
-GQCP::QCMatrix&lt;double&gt; M1 (2);  // the first matrix representation
+GQCP::SquareMatrix&lt;double&gt; M1 (2);  // the first matrix representation
 M1 &lt;&lt; 1.0, 2.0,
       3.0, 4.0;
 
-GQCP::QCMatrix&lt;double&gt; M2 = GQCP::QCMatrix&lt;double&gt;::Identity(2);  // the second first matrix representation
+GQCP::SquareMatrix&lt;double&gt; M2 = GQCP::SquareMatrix&lt;double&gt;::Identity(2);  // the second first matrix representation
 
 
 // Construct an operator with two components
-const GQCP::SQOneElectronOperator&lt;double, 2&gt; op ({M1, 2*M1*M2});  // note that we can naturally work with multiplications of matrices thanks to QCMatrix inheriting from Eigen
+const GQCP::SQOneElectronOperator&lt;double, 2&gt; op ({M1, 2*M1*M2});  // note that we can naturally work with multiplications of matrices thanks to SquareMatrix inheriting from Eigen
 
 
 const auto all_components = op.allParameters();  // return all the components
