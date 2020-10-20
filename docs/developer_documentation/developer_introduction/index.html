@@ -145,7 +145,7 @@ std::cout &lt;&lt; op.parameters(1)(0,1) &lt;&lt; std::endl;  // access the elem
 
     // Create a convergence criterion on the norm of subsequent density matrices
     const auto density_matrix_extractor = [] (const RHFSCFEnvironment&lt;Scalar&gt;&amp; environment) { return environment.density_matrices; };
-    const ConsecutiveIteratesNormConvergence&lt;OneDM&lt;Scalar&gt;, RHFSCFEnvironment&lt;Scalar&gt;&gt; convergence_criterion (threshold, density_matrix_extractor);
+    const ConsecutiveIteratesNormConvergence&lt;Orbital1DM&lt;Scalar&gt;, RHFSCFEnvironment&lt;Scalar&gt;&gt; convergence_criterion (threshold, density_matrix_extractor);
 
     return IterativeAlgorithm&lt;RHFSCFEnvironment&lt;Scalar&gt;&gt;(plain_rhf_scf_cycle, convergence_criterion, maximum_number_of_iterations);
 }
