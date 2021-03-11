@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
   <compound refid="struct_g_q_c_p_1_1___unique__if" kind="struct"><name>GQCP::_Unique_if</name>
     <member refid="struct_g_q_c_p_1_1___unique__if_1a0e06014d672bd9285e03a606df122df4" kind="typedef"><name>_Single_object</name></member>
   </compound>
@@ -352,6 +352,10 @@
     <member refid="class_g_q_c_p_1_1_cartesian_g_t_o_1a59333cb8b8aa5cbc9a319195f8b1480f" kind="function"><name>calculateNormalizationFactorComponent</name></member>
     <member refid="class_g_q_c_p_1_1_cartesian_g_t_o_1aee5504defedb8cf4ad5ed6fc3bc4c357" kind="function"><name>calculateNormalizationFactor</name></member>
   </compound>
+  <compound refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d" kind="class"><name>GQCP::QCMethod::CCD</name>
+    <member refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a50ecdf75cfbd8d7cd12bd0a029e3eeaf" kind="typedef"><name>Scalar</name></member>
+    <member refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a59581e9b5145aa42e5e049ab260bb1bf" kind="function"><name>optimize</name></member>
+  </compound>
   <compound refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d" kind="class"><name>GQCP::QCModel::CCD</name>
     <member refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d_1a40e79b329b95219182ed146ec3a13ea9" kind="typedef"><name>Scalar</name></member>
     <member refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d_1a522c201b7b97664e3aa979d348b85d41" kind="variable"><name>t2</name></member>
@@ -364,10 +368,6 @@
     <member refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d_1a936fe2d9cae044af7ce144569d924eac" kind="function"><name>calculateW1</name></member>
     <member refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d_1a666dfa903199d5936b0991e3dc5d0c2a" kind="function"><name>calculateW2</name></member>
     <member refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d_1acadd069c7c3c224b2177156d933614af" kind="function"><name>calculateW3</name></member>
-  </compound>
-  <compound refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d" kind="class"><name>GQCP::QCMethod::CCD</name>
-    <member refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a50ecdf75cfbd8d7cd12bd0a029e3eeaf" kind="typedef"><name>Scalar</name></member>
-    <member refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a59581e9b5145aa42e5e049ab260bb1bf" kind="function"><name>optimize</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_c_c_d_amplitudes_update" kind="class"><name>GQCP::CCDAmplitudesUpdate</name>
     <member refid="class_g_q_c_p_1_1_c_c_d_amplitudes_update_1af7c410f3384f329e771111e90586af6c" kind="typedef"><name>Scalar</name></member>
@@ -390,6 +390,7 @@
   <compound refid="class_g_q_c_p_1_1_c_c_d_solver" kind="class"><name>GQCP::CCDSolver</name>
     <member refid="class_g_q_c_p_1_1_c_c_d_solver_1a1699b71a10a7147d4308233fc4d32141" kind="typedef"><name>Scalar</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_d_solver_1a246f6c40282aa89c88d0647df263d033" kind="function"><name>Plain</name></member>
+    <member refid="class_g_q_c_p_1_1_c_c_d_solver_1a79356536c991851bc7229ee381f00032" kind="function"><name>DIIS</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_s_d" kind="class"><name>GQCP::QCMethod::CCSD</name>
     <member refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_s_d_1a81686c654e5b6c77f15d53f453b8bdda" kind="typedef"><name>Scalar</name></member>
@@ -428,9 +429,11 @@
   </compound>
   <compound refid="class_g_q_c_p_1_1_c_c_s_d_environment" kind="class"><name>GQCP::CCSDEnvironment</name>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a582210d8ce5f4eb3c4ad4ba0a37f6aab" kind="typedef"><name>Scalar</name></member>
-    <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a70b4d4d2b5ea5557bd35a69d3beade56" kind="variable"><name>electronic_energies</name></member>
+    <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1aef79bf3441544306172ef243a0a3d9a0" kind="variable"><name>correlation_energies</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1abdea2152c1643fb71b13cfd2383d92ee" kind="variable"><name>t1_amplitudes</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a3a005b633746ec034014da148dfae1e5" kind="variable"><name>t2_amplitudes</name></member>
+    <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a85381ffcfad2dd470437720e85a84f22" kind="variable"><name>t1_amplitude_errors</name></member>
+    <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a9ab250672806f9feb5cea83e66f774a9" kind="variable"><name>t2_amplitude_errors</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a96da3b098a302ff00696091b168cba8e" kind="variable"><name>f</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a288b0979b63efb8eb9aadd045f8c93aa" kind="variable"><name>V_A</name></member>
     <member refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a72da8af53a68fa131224b46dc95c6d38" kind="variable"><name>F1</name></member>
@@ -725,6 +728,14 @@
     <member refid="class_g_q_c_p_1_1_field_1a96a3a855c67fca74317edf285082a3a7" kind="function"><name>ReadGridFile</name></member>
     <member refid="class_g_q_c_p_1_1_field_1af389765c10f7818e16bd66d6e9d235cd" kind="friend"><name>operator+</name></member>
     <member refid="class_g_q_c_p_1_1_field_1af08d9a23cd201e1b7e71675a05fd8c9e" kind="friend"><name>operator-</name></member>
+  </compound>
+  <compound refid="class_g_q_c_p_1_1_functional_primitive_engine" kind="class"><name>GQCP::FunctionalPrimitiveEngine</name>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1a174928d21997f1e43def391ab3658ba8" kind="typedef"><name>IntegralScalar</name></member>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1a41eaa9480edfa34f8573d77fdf494969" kind="variable"><name>Components</name></member>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1ad611d282231b4d895648cbe78c91ebc0" kind="variable"><name>function</name></member>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1aacc77fe3481ed09d9ca0e8eb282ed91b" kind="function"><name>FunctionalPrimitiveEngine</name></member>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1a7cf67d03745b9a160c39bfd35f6287a3" kind="function"><name>prepareStateForComponent</name></member>
+    <member refid="class_g_q_c_p_1_1_functional_primitive_engine_1ab540e80af6313a65244cd279d3f1ac9f" kind="function"><name>calculate</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_functional_step" kind="class"><name>GQCP::FunctionalStep</name>
     <member refid="class_g_q_c_p_1_1_functional_step_1ada2b7f1e0145d18a7a2843f181edf2da" kind="typedef"><name>Environment</name></member>
@@ -1238,6 +1249,8 @@
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1a8a24a71b6a4c013badc0a484966b4e22" kind="function"><name>get</name></member>
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1a723d4bbf5cc350ed155b6752ed2bb096" kind="function"><name>LibintInterfacer</name></member>
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1aab216f2d2458c398eb271561f7f553dd" kind="function"><name>operator=</name></member>
+    <member refid="class_g_q_c_p_1_1_libint_interfacer_1a0b80aec11ef1d1fd1773b6f51ced15fb" kind="function"><name>interface</name></member>
+    <member refid="class_g_q_c_p_1_1_libint_interfacer_1a1b4b0834ac2f6b99d6cdd1525a93bd60" kind="function"><name>interface</name></member>
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1ab167b72e70548e5f2dd14e34d6fb1780" kind="function"><name>interface</name></member>
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1a22bdd7cee1e7f37677c16e99ea2ac4ab" kind="function"><name>interface</name></member>
     <member refid="class_g_q_c_p_1_1_libint_interfacer_1a330f91c686a79c6950dec1f068bed6ce" kind="function"><name>interface</name></member>
@@ -1433,14 +1446,14 @@
   <compound refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient" kind="class"><name>GQCP::McMurchieDavidsonCoefficient</name>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a4c404911ec521a7db38561d6436f9b1d" kind="variable"><name>K</name></member>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1ab1b5b6a539f3189c328abf91d595ba92" kind="variable"><name>L</name></member>
-    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1ab9b2a6ad6f24a6d2d9cf86396734e6bf" kind="variable"><name>alpha</name></member>
-    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a383d5e09585bcadb6a86acdead3af7c0" kind="variable"><name>beta</name></member>
-    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1af44d0e549766b8b9ec145282078d67ca" kind="function"><name>McMurchieDavidsonCoefficient</name></member>
+    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1af7150eb4ccae5aeddaab59bd5faac2d6" kind="variable"><name>a</name></member>
+    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a5f1f6a1f9ef4163472212dd95c504dea" kind="variable"><name>b</name></member>
+    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1aa70a06c426c9395a1f6bf7339d6a662f" kind="function"><name>McMurchieDavidsonCoefficient</name></member>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1aaa4db462c959066380ea4a9b201ce1f8" kind="function"><name>operator()</name></member>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a6e45664e3ffca2c50c94ae6e46d2ef44" kind="function"><name>centerOfMass</name></member>
-    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1add58479b11276f84af4e77433214e11b" kind="function"><name>distance</name></member>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a93a17b44635c47cab7d157daf9f946ea" kind="function"><name>reducedExponent</name></member>
     <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1a08f173bdd06c961321fcb9e6a1c6ea87" kind="function"><name>totalExponent</name></member>
+    <member refid="class_g_q_c_p_1_1_mc_murchie_davidson_coefficient_1add58479b11276f84af4e77433214e11b" kind="function"><name>distance</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_minimization_environment" kind="class"><name>GQCP::MinimizationEnvironment</name>
     <member refid="class_g_q_c_p_1_1_minimization_environment_1aa802d9ef9b18dc6771c0255dce8a44b1" kind="typedef"><name>Scalar</name></member>
@@ -1456,7 +1469,14 @@
   <compound refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component" kind="class"><name>GQCP::MixedSpinResolved2DMComponent</name>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1ac5ad15a7cb7c0e26246d43b844967b8a" kind="typedef"><name>Scalar</name></member>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1ad3ef74b2b6b6a3126a475dacd47aec75" kind="typedef"><name>Self</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1afd341a064a84da2136a0d15bbb1866a4" kind="variable"><name>d</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1ad6b55e2cf8837191b2fbae9f17442368" kind="function"><name>MixedSpinResolved2DMComponent</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1aeeb2c103b1969cc5c535b71e3e00f2c8" kind="function"><name>MixedSpinResolved2DMComponent</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1abfaf3d5978bb67933bcc129e73e35a8a" kind="function"><name>tensor</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1a146fb8c1345c295623aec7f1bace0c12" kind="function"><name>tensor</name></member>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1a192e4c3262c24fd817a310ab8267d56b" kind="function"><name>numberOfOrbitals</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1a64fc61ef4e9247a33f87d813e75527aa" kind="function"><name>operator+=</name></member>
+    <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1a0f0abafa128cc561833ff07a9531cb0d" kind="function"><name>operator*=</name></member>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1ac1f06cb6ea47669187539f5deb7f9b8d" kind="function"><name>trace</name></member>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1aeedc530afe4b833154c0cd28e32d6d47" kind="function"><name>transformed</name></member>
     <member refid="class_g_q_c_p_1_1_mixed_spin_resolved2_d_m_component_1ace9e92100a3e1219efb8bd2d20b5f20c" kind="function"><name>transform</name></member>
@@ -2096,7 +2116,15 @@
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1a8b792b25e79a11342da60d54b5f1ed44" kind="typedef"><name>DerivedDM</name></member>
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1a758c8b8f0d87ca20b2e212140b8e201f" kind="typedef"><name>Self</name></member>
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1ad2de22beb149df74e5b4757cfcbbbf5a" kind="typedef"><name>Transformation</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1a4b099f7e230bdbb896430075d19bf196" kind="variable"><name>D</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1ae3065b1b1822b7246642d34ff4300bfe" kind="function"><name>Simple1DM</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1ae16447c5b63cd60e31d154e791d79dc0" kind="function"><name>Simple1DM</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1a4a9790b2d1ceb12a2fc3d62002923151" kind="function"><name>matrix</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1a3e3c379b5a13002dc7332d2441798639" kind="function"><name>matrix</name></member>
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1a4119731fc8031d5bcaecba3db59297bb" kind="function"><name>numberOfOrbitals</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1aba76988eeab709bb1af1a4ae9d4ab83b" kind="function"><name>norm</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1a3730b13257db341c113e49aa26b3fee4" kind="function"><name>operator+=</name></member>
+    <member refid="class_g_q_c_p_1_1_simple1_d_m_1adf9829fb7c3d3f634ad83ca0a37fea96" kind="function"><name>operator*=</name></member>
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1a734825576319d1c80e64ad9142bf2894" kind="function"><name>transformed</name></member>
     <member refid="class_g_q_c_p_1_1_simple1_d_m_1a6acb767fddd8829ddfd34a3dc5980d2e" kind="function"><name>rotated</name></member>
   </compound>
@@ -2106,9 +2134,16 @@
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1aefc8c5af3ee2724a55047ea838b0c6bf" kind="typedef"><name>Self</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1aed1f55de7a9d98b0840235518c9936b9" kind="typedef"><name>OneDM</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1aba11548e39f9172a41286b4bab30bfbf" kind="typedef"><name>Transformation</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1a548a5afa20bb04fb0cccaec0d1e2284d" kind="variable"><name>d</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1a1d060aeddc9190dde803c35abdcc3a7b" kind="function"><name>Simple2DM</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1a3ab74c809c6d59a4644a0961bd07c95f" kind="function"><name>Simple2DM</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1aad3ffde69137305a6beff84f68fa0734" kind="function"><name>tensor</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1a251e04ca90de055345b494907a4f76d9" kind="function"><name>tensor</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1a9294ffe2b798149a40916f8750e511c7" kind="function"><name>numberOfOrbitals</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1aa0174297056f19cd441279cb3f1f4b20" kind="function"><name>reduce</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1a9f69bac123516579adcd3a106e032208" kind="function"><name>trace</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1ad39edb07d7dcd4b8cf1b8d64a5355e8d" kind="function"><name>operator+=</name></member>
+    <member refid="class_g_q_c_p_1_1_simple2_d_m_1aec142ff4054c04001007500e9009513b" kind="function"><name>operator*=</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1aba6f33b2d67fc36483b2ed3d75c6e2dc" kind="function"><name>transformed</name></member>
     <member refid="class_g_q_c_p_1_1_simple2_d_m_1afa2372a0996cdbb192187d0ab8f72866" kind="function"><name>rotated</name></member>
   </compound>
@@ -2154,8 +2189,8 @@
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1a66f1572868ae3bc4105f55783551667a" kind="typedef"><name>Derived2DM</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1afcb21b0fa27c292d97432fca3d5053d2" kind="typedef"><name>MullikenPartitioning</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1ab6a38425352d5efdf8e3a733be931c3d" kind="function"><name>calculateExpectationValue</name></member>
-    <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1aaff15231cb93a6b83f3523a5280d55bb" kind="function"><name>calculateFockianMatrix</name></member>
-    <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1aefb18657cba382fba0cbad975fcac1f9" kind="function"><name>calculateSuperFockianMatrix</name></member>
+    <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1acdc164109eb242236265053a76993de5" kind="function"><name>calculateFockianMatrix</name></member>
+    <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1a56ca07c0f5a64e3c6314a2134ce2ccd9" kind="function"><name>calculateSuperFockianMatrix</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1ad74d55024bd63ad9138f011a13fdd5f0" kind="function"><name>transformed</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1ab1474f3ec1beed8cc704747f81a73d31" kind="function"><name>rotated</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_one_electron_operator_1a860bef15613c7755de4338798f99a612" kind="function"><name>oneIndexTransformed</name></member>
@@ -2174,8 +2209,8 @@
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a4937ad940b74c9e3e05e2a8031d8b3c2" kind="variable"><name>is_antisymmetrized</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1ac25018de357564880f6317e1d6930137" kind="variable"><name>is_expressed_using_chemists_notation</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a5ba898d010523b0525f8f2d76f968828" kind="function"><name>calculateExpectationValue</name></member>
-    <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a710b1ac2356a85deee1d5d6c47ea5a9d" kind="function"><name>calculateFockianMatrix</name></member>
-    <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a7bab46450e4e1bddbff79f3e8ddfcf0b" kind="function"><name>calculateSuperFockianMatrix</name></member>
+    <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a43b3f6d8fdd25861d362c4257efe8264" kind="function"><name>calculateFockianMatrix</name></member>
+    <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a21332fee28561cb37a7ded0c64aa5ebc" kind="function"><name>calculateSuperFockianMatrix</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1ae3c403cf1c713b5c63334f00f4ea16e5" kind="function"><name>effectiveOneElectronPartition</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1ada0b12379e30e62f52101ccd6ea8b4ec" kind="function"><name>transformed</name></member>
     <member refid="class_g_q_c_p_1_1_simple_s_q_two_electron_operator_1a3e6be644da73696328a0ac02ebd9bf50" kind="function"><name>rotated</name></member>
@@ -2492,12 +2527,11 @@
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1a319fb8a01157d667cc4c7480108fa469" kind="function"><name>operator()</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1af77bfe33980d15ebd8768fdda8c804e5" kind="function"><name>operator()</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1ad59a3b5bf6da7ed43dd8e1e3f6caef49" kind="function"><name>asImplicitMatrixSlice</name></member>
-    <member refid="class_g_q_c_p_1_1_t1_amplitudes_1abc7ea3e9be64ed749b6e33011c21fe67" kind="function"><name>norm</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1a801461e773b25c13e9318dfbfd6a722b" kind="function"><name>orbitalSpace</name></member>
+    <member refid="class_g_q_c_p_1_1_t1_amplitudes_1abc7ea3e9be64ed749b6e33011c21fe67" kind="function"><name>norm</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1a7d5903cbb3231a6c53e29cc0b2770360" kind="function"><name>operator+=</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1ae54c6b87b0924981ce657f83f3c8d8fb" kind="function"><name>operator*=</name></member>
     <member refid="class_g_q_c_p_1_1_t1_amplitudes_1a3150e61624672a155ce7a13807c72ac0" kind="function"><name>Perturbative</name></member>
-    <member refid="class_g_q_c_p_1_1_t1_amplitudes_1afbceca3af3dee8bdbee4d4a321ad3a6b" kind="function"><name>Perturbative</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_t2_amplitudes" kind="class"><name>GQCP::T2Amplitudes</name>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1aa92c680ab582739af243ff2ed843ad45" kind="typedef"><name>Scalar</name></member>
@@ -2509,12 +2543,27 @@
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a72b3745d781ae7986c45f4e348906b89" kind="function"><name>operator()</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a842400905c898572cc8ab4df1e162795" kind="function"><name>operator()</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1abf1805e5eaa6e845a1ed95e80c122bf0" kind="function"><name>asImplicitRankFourTensorSlice</name></member>
-    <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a0ba7fd37b05a3d653b15a148a675d000" kind="function"><name>norm</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1ab97309a121f7d229f2f5ac00c343ac6d" kind="function"><name>orbitalSpace</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a0ba7fd37b05a3d653b15a148a675d000" kind="function"><name>norm</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1aceccc95a7c3c82a13ad6cb09cf77ed82" kind="function"><name>operator+=</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a10ae1614bffaae6a0bdf8755b8840d72" kind="function"><name>operator*=</name></member>
     <member refid="class_g_q_c_p_1_1_t2_amplitudes_1a5a0b7ae7664a5eaa7706867505931790" kind="function"><name>Perturbative</name></member>
-    <member refid="class_g_q_c_p_1_1_t2_amplitudes_1ada764c328a919261dc1b2653a1026985" kind="function"><name>Perturbative</name></member>
+  </compound>
+  <compound refid="class_g_q_c_p_1_1_t2_d_i_i_s" kind="class"><name>GQCP::T2DIIS</name>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1afe0e1b061f21a2e1e53ab66fae584821" kind="typedef"><name>Scalar</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1aa14a764323726787475897bc23405d9c" kind="typedef"><name>Environment</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1ae9724fbc1e204d8ac50fc0d7219ab18e" kind="variable"><name>minimum_subspace_dimension</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1a02d4bd79ca2aba67a4718d89f9909d8f" kind="variable"><name>maximum_subspace_dimension</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1ad294cc33724090899f5adc67fd629ad3" kind="variable"><name>diis</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1a7f7c719c76487cdbe41e978a378bcfdb" kind="function"><name>T2DIIS</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1aea6d5c59a6d05853733d63b24141a8ae" kind="function"><name>description</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_d_i_i_s_1aa210a568a82efbbd41eb6dd0de82cdfa" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_g_q_c_p_1_1_t2_error_calculation" kind="class"><name>GQCP::T2ErrorCalculation</name>
+    <member refid="class_g_q_c_p_1_1_t2_error_calculation_1a60c9d930c4dc1019483f92d41f137fc2" kind="typedef"><name>Scalar</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_error_calculation_1af8557342bceb02afe2f4a2bbe2def8e2" kind="typedef"><name>Environment</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_error_calculation_1a0bd596a51223272502582889e156f880" kind="function"><name>description</name></member>
+    <member refid="class_g_q_c_p_1_1_t2_error_calculation_1a97494967a5a80df78b05db13382c0538" kind="function"><name>execute</name></member>
   </compound>
   <compound refid="class_g_q_c_p_1_1_tensor" kind="class"><name>GQCP::Tensor</name>
     <member refid="class_g_q_c_p_1_1_tensor_1af3fe62d68eabe84eaa63f637a31fc65c" kind="typedef"><name>Scalar</name></member>
@@ -3009,6 +3058,8 @@
   </compound>
   <compound refid="_base_two_electron_integral_engine_8hpp" kind="file"><name>BaseTwoElectronIntegralEngine.hpp</name>
   </compound>
+  <compound refid="_functional_primitive_engine_8hpp" kind="file"><name>FunctionalPrimitiveEngine.hpp</name>
+  </compound>
   <compound refid="_integral_calculator_8hpp" kind="file"><name>IntegralCalculator.hpp</name>
   </compound>
   <compound refid="_integral_engine_8hpp" kind="file"><name>IntegralEngine.hpp</name>
@@ -3159,7 +3210,9 @@
   </compound>
   <compound refid="_iterative_algorithm_8hpp" kind="file"><name>IterativeAlgorithm.hpp</name>
   </compound>
-  <compound refid="_step_8hpp" kind="file"><name>Step.hpp</name>
+  <compound refid="_algorithm_2_step_8hpp" kind="file"><name>Step.hpp</name>
+  </compound>
+  <compound refid="_optimization_2_non_linear_equation_2_step_8hpp" kind="file"><name>step.hpp</name>
   </compound>
   <compound refid="_step_collection_8hpp" kind="file"><name>StepCollection.hpp</name>
   </compound>
@@ -3230,8 +3283,6 @@
   <compound refid="_non_linear_equation_environment_8hpp" kind="file"><name>NonLinearEquationEnvironment.hpp</name>
   </compound>
   <compound refid="_non_linear_equation_solver_8hpp" kind="file"><name>NonLinearEquationSolver.hpp</name>
-  </compound>
-  <compound refid="step_8hpp" kind="file"><name>step.hpp</name>
   </compound>
   <compound refid="_optimization_environment_8hpp" kind="file"><name>OptimizationEnvironment.hpp</name>
   </compound>
@@ -3372,6 +3423,10 @@
   <compound refid="_c_c_s_d_intermediates_update_8hpp" kind="file"><name>CCSDIntermediatesUpdate.hpp</name>
   </compound>
   <compound refid="_c_c_s_d_solver_8hpp" kind="file"><name>CCSDSolver.hpp</name>
+  </compound>
+  <compound refid="_t2_d_i_i_s_8hpp" kind="file"><name>T2DIIS.hpp</name>
+  </compound>
+  <compound refid="_t2_error_calculation_8hpp" kind="file"><name>T2ErrorCalculation.hpp</name>
   </compound>
   <compound refid="_c_i_8hpp" kind="file"><name>CI.hpp</name>
   </compound>
@@ -3635,13 +3690,13 @@
   </compound>
   <compound refid="dir_ee01769bfaeb3f33195d6ca712294cb2" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Basis</name>
   </compound>
-  <compound refid="dir_091bfa8a2ad26933326dea29b9e6653e" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCModel/CC</name>
-  </compound>
   <compound refid="dir_9a96a826b53cf3dfd8fbccad27600922" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/CC</name>
   </compound>
-  <compound refid="dir_1898ac9af35c6d8ed6376f04110e77c0" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/CI</name>
+  <compound refid="dir_091bfa8a2ad26933326dea29b9e6653e" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCModel/CC</name>
   </compound>
   <compound refid="dir_b003bc2eba300379a8aa313604c15910" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCModel/CI</name>
+  </compound>
+  <compound refid="dir_1898ac9af35c6d8ed6376f04110e77c0" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/CI</name>
   </compound>
   <compound refid="dir_fa8552c11c546e886dd0ab624ab9fd09" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/Eigenproblem/Davidson</name>
   </compound>
@@ -3649,29 +3704,29 @@
   </compound>
   <compound refid="dir_56734510d0d14ef1ee351fb86f505aa1" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/Eigenproblem</name>
   </compound>
-  <compound refid="dir_42d0b9186c917f45a633d31e91957fd1" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized</name>
-  </compound>
   <compound refid="dir_9aa0c11a544b6d3157e2ad5a8a14999b" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized</name>
   </compound>
-  <compound refid="dir_6c4af46cc71c81a187b7586915ea7074" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Functions</name>
+  <compound refid="dir_42d0b9186c917f45a633d31e91957fd1" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized</name>
   </compound>
   <compound refid="dir_cee0e4a9be0398681472b1b3a9977ef8" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Functions</name>
   </compound>
-  <compound refid="dir_d14101abff67e2743de1df9a6546494d" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/Geminals</name>
+  <compound refid="dir_6c4af46cc71c81a187b7586915ea7074" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Functions</name>
   </compound>
   <compound refid="dir_d258e53cc9882d4f53db1685bedb6902" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCMethod/Geminals</name>
   </compound>
-  <compound refid="dir_f4550bdbdce8a93f628c6d1de55d3b14" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCModel/Geminals</name>
+  <compound refid="dir_d14101abff67e2743de1df9a6546494d" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/Geminals</name>
   </compound>
   <compound refid="dir_696a2fec5b8b30966ab29971c678fded" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCModel/Geminals</name>
+  </compound>
+  <compound refid="dir_f4550bdbdce8a93f628c6d1de55d3b14" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCModel/Geminals</name>
   </compound>
   <compound refid="dir_204f2b3dc9948184c7bf9dbf7a7b4570" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/GHF</name>
   </compound>
   <compound refid="dir_97189f8bdcb13d91395c09d841162246" kind="dir"><name>/__w/GQCP/GQCP/gqcp</name>
   </compound>
-  <compound refid="dir_d8e2c13fa0a721c4c8395a551a68aabd" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Grid</name>
-  </compound>
   <compound refid="dir_48c44faaca8d6770190fd195afb3fc1a" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Grid</name>
+  </compound>
+  <compound refid="dir_d8e2c13fa0a721c4c8395a551a68aabd" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Grid</name>
   </compound>
   <compound refid="dir_a7d87e49902b2c5159a2bbbbea962fdc" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF</name>
   </compound>
@@ -3679,29 +3734,29 @@
   </compound>
   <compound refid="dir_0f303d9e90ecbf2958f248aff9125567" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include</name>
   </compound>
-  <compound refid="dir_f03c06cc3ef56f8c95f606de7e6c42ea" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Integrals</name>
-  </compound>
   <compound refid="dir_6b4e3172dc092f9a01a04d85d44c119d" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Basis/Integrals</name>
   </compound>
-  <compound refid="dir_37617fc2218eedfce52b62599adbd81f" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/Interfaces</name>
+  <compound refid="dir_f03c06cc3ef56f8c95f606de7e6c42ea" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Integrals</name>
   </compound>
   <compound refid="dir_09d6c7a98a9abdede9731b9eae52264b" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Basis/Integrals/Interfaces</name>
+  </compound>
+  <compound refid="dir_37617fc2218eedfce52b62599adbd81f" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/Interfaces</name>
   </compound>
   <compound refid="dir_8157544c943da50df17c34acc8562db6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCMethod/OrbitalOptimization/Localization</name>
   </compound>
   <compound refid="dir_c90afff34619ae5a03fb92233acd80aa" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/OrbitalOptimization/Localization</name>
   </compound>
-  <compound refid="dir_149e5f50ad70cb49c7e4a458ffc6a689" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical</name>
-  </compound>
   <compound refid="dir_9215746a3aa0794f85f4291b2f1d4490" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical</name>
   </compound>
-  <compound refid="dir_cb50b33af0fa26949cfbf4953da1f9d6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/Minimization</name>
+  <compound refid="dir_149e5f50ad70cb49c7e4a458ffc6a689" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical</name>
   </compound>
   <compound refid="dir_838be35ecc4d18c05ee53fd1decc5f49" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Optimization/Minimization</name>
   </compound>
-  <compound refid="dir_27a8bd7aa1fd2f94b0b67c5ed1d90b94" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Operator/SecondQuantized/ModelHamiltonian</name>
+  <compound refid="dir_cb50b33af0fa26949cfbf4953da1f9d6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/Minimization</name>
   </compound>
   <compound refid="dir_41ae741239889692afc314a7f1922409" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Operator/SecondQuantized/ModelHamiltonian</name>
+  </compound>
+  <compound refid="dir_27a8bd7aa1fd2f94b0b67c5ed1d90b94" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Operator/SecondQuantized/ModelHamiltonian</name>
   </compound>
   <compound refid="dir_3f7661081dfd8038b3f615272e600c89" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Molecule</name>
   </compound>
@@ -3709,9 +3764,9 @@
   </compound>
   <compound refid="dir_79448545136e565c8efebc1ae12bce98" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/MullikenPartitioning</name>
   </compound>
-  <compound refid="dir_4767a49069fe6ad868cda8b5db319b4a" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/NonLinearEquation</name>
-  </compound>
   <compound refid="dir_e64b97bf56c44664b7c350cbd0954ef0" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Optimization/NonLinearEquation</name>
+  </compound>
+  <compound refid="dir_4767a49069fe6ad868cda8b5db319b4a" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization/NonLinearEquation</name>
   </compound>
   <compound refid="dir_b35ed9eac57381a295ca1a39f23bd5a6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/ONVBasis</name>
   </compound>
@@ -3719,25 +3774,25 @@
   </compound>
   <compound refid="dir_e66c48a337996579237deb7f7b98352d" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Operator</name>
   </compound>
-  <compound refid="dir_45b68fad4872c09ee59e23428ba67da1" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization</name>
-  </compound>
   <compound refid="dir_069a7b10d39394b75137414a696e6f2e" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Mathematical/Optimization</name>
+  </compound>
+  <compound refid="dir_45b68fad4872c09ee59e23428ba67da1" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Mathematical/Optimization</name>
   </compound>
   <compound refid="dir_c420f6fb1685b911a015070b057c8638" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/OrbitalOptimization</name>
   </compound>
   <compound refid="dir_4ecca7d0336f7657106636de0b54cac8" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCMethod/OrbitalOptimization</name>
   </compound>
-  <compound refid="dir_ca95bc29536f37bec3b767943e422eb4" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Processing</name>
-  </compound>
   <compound refid="dir_3b2cc30d09dd415306402d06edcc38d7" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Processing</name>
   </compound>
-  <compound refid="dir_5db1d08ccadb80de9441dc8dbac69907" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Processing/Properties</name>
+  <compound refid="dir_ca95bc29536f37bec3b767943e422eb4" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Processing</name>
   </compound>
   <compound refid="dir_ac9b26001e935366de9867feaaa02e62" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Processing/Properties</name>
   </compound>
-  <compound refid="dir_d7d218554e8f7cd1ed4d34252e45a7a6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod</name>
+  <compound refid="dir_5db1d08ccadb80de9441dc8dbac69907" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Processing/Properties</name>
   </compound>
   <compound refid="dir_b3f9e05ef3b87da55cd8694d21261357" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCMethod</name>
+  </compound>
+  <compound refid="dir_d7d218554e8f7cd1ed4d34252e45a7a6" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod</name>
   </compound>
   <compound refid="dir_0ecbb0c9c32418df8456265f5a86051e" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/QCModel</name>
   </compound>
@@ -3765,9 +3820,9 @@
   </compound>
   <compound refid="dir_d404669e0d4bf6387b4b6b921299d848" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src</name>
   </compound>
-  <compound refid="dir_42d2bf22de42726412f541b62b70e361" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Transformations</name>
-  </compound>
   <compound refid="dir_f7f17ba6af08d25acbe1f49d3f108ba3" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Basis/Transformations</name>
+  </compound>
+  <compound refid="dir_42d2bf22de42726412f541b62b70e361" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/Basis/Transformations</name>
   </compound>
   <compound refid="dir_cb77ee1e6cf10d494adbc9ec9af98407" kind="dir"><name>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF</name>
   </compound>
@@ -3775,20 +3830,20 @@
   </compound>
   <compound refid="dir_db2ccceb1cb34e4987a43fd657d60903" kind="dir"><name>/__w/GQCP/GQCP/gqcp/src/Utilities</name>
   </compound>
-  <compound refid="_2__w_2_g_q_c_p_2_g_q_c_p_2gqcp_2src_2_o_n_v_basis_2_spin_unresolved_o_n_v_8cpp-example" kind="example"><name>/__w/GQCP/GQCP/gqcp/src/ONVBasis/SpinUnresolvedONV.cpp</name>
-  </compound>
-  <compound refid="_2__w_2_g_q_c_p_2_g_q_c_p_2gqcp_2src_2_o_n_v_basis_2_spin_unresolved_o_n_v_basis_8cpp-example" kind="example"><name>/__w/GQCP/GQCP/gqcp/src/ONVBasis/SpinUnresolvedONVBasis.cpp</name>
-  </compound>
-  <compound refid="_an-example" kind="example"><name>An</name>
-  </compound>
-  <compound refid="_let-example" kind="example"><name>Let</name>
-  </compound>
-  <compound refid="_some-example" kind="example"><name>Some</name>
+  <compound refid="_t1_8einsum-example" kind="example"><name>T1.einsum</name>
   </compound>
   <compound refid="_t_8einsum-example" kind="example"><name>T.einsum</name>
   </compound>
-  <compound refid="_t1_8einsum-example" kind="example"><name>T1.einsum</name>
+  <compound refid="_some-example" kind="example"><name>Some</name>
+  </compound>
+  <compound refid="_an-example" kind="example"><name>An</name>
   </compound>
   <compound refid="_this-example" kind="example"><name>This</name>
+  </compound>
+  <compound refid="_let-example" kind="example"><name>Let</name>
+  </compound>
+  <compound refid="_2__w_2_g_q_c_p_2_g_q_c_p_2gqcp_2src_2_o_n_v_basis_2_spin_unresolved_o_n_v_8cpp-example" kind="example"><name>/__w/GQCP/GQCP/gqcp/src/ONVBasis/SpinUnresolvedONV.cpp</name>
+  </compound>
+  <compound refid="_2__w_2_g_q_c_p_2_g_q_c_p_2gqcp_2src_2_o_n_v_basis_2_spin_unresolved_o_n_v_basis_8cpp-example" kind="example"><name>/__w/GQCP/GQCP/gqcp/src/ONVBasis/SpinUnresolvedONVBasis.cpp</name>
   </compound>
 </doxygenindex>

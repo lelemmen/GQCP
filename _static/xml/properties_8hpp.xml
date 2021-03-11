@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="properties_8hpp" kind="file" language="C++">
     <compoundname>properties.hpp</compoundname>
     <includes refid="_linear_expansion_8hpp" local="yes">QCModel/CI/LinearExpansion.hpp</includes>
@@ -648,6 +648,8 @@
         <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="111" relation="include">
         </childnode>
@@ -1339,6 +1341,8 @@
         <link refid="_mixed_spin_resolved2_d_m_component_8hpp"/>
         <childnode refid="53" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
         <childnode refid="111" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
@@ -1438,6 +1442,8 @@
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>

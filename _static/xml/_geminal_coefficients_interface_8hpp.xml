@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="_geminal_coefficients_interface_8hpp" kind="file" language="C++">
     <compoundname>GeminalCoefficientsInterface.hpp</compoundname>
     <includes local="yes">ONVBasis/SeniorityZeroONVBasis.hpp</includes>
@@ -654,6 +654,8 @@
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
@@ -1353,6 +1355,8 @@
         <link refid="_mixed_spin_resolved2_d_m_component_8hpp"/>
         <childnode refid="54" relation="include">
         </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
         <childnode refid="112" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
@@ -1446,6 +1450,8 @@
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>

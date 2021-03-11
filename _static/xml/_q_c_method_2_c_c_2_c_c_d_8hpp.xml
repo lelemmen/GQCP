@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="_q_c_method_2_c_c_2_c_c_d_8hpp" kind="file" language="C++">
     <compoundname>CCD.hpp</compoundname>
     <includes refid="_c_c_s_d_environment_8hpp" local="yes">QCMethod/CC/CCSDEnvironment.hpp</includes>
@@ -686,6 +686,8 @@
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
@@ -1418,6 +1420,8 @@
         <link refid="_mixed_spin_resolved2_d_m_component_8hpp"/>
         <childnode refid="42" relation="include">
         </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
         <childnode refid="112" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
@@ -1520,6 +1524,8 @@
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -1756,7 +1762,7 @@
 <codeline lineno="27" refid="namespace_g_q_c_p_1_1_q_c_method" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">QCMethod<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_Scalar&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_Scalar&gt;</highlight></codeline>
 <codeline lineno="36" refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d" kindref="compound">CCD</ref><sp/>{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="38" refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a50ecdf75cfbd8d7cd12bd0a029e3eeaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_q_c_method_1_1_c_c_d_1a50ecdf75cfbd8d7cd12bd0a029e3eeaf" kindref="member">Scalar</ref><sp/>=<sp/>_Scalar;</highlight></codeline>
@@ -1776,7 +1782,7 @@
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Furthermore,<sp/>the<sp/>solvers<sp/>only<sp/>find<sp/>the<sp/>ground<sp/>state<sp/>wave<sp/>function<sp/>parameters,<sp/>so<sp/>the<sp/>QCStructure<sp/>only<sp/>needs<sp/>to<sp/>contain<sp/>the<sp/>parameters<sp/>for<sp/>one<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>T2<sp/>=<sp/>environment.<ref refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a3a005b633746ec034014da148dfae1e5" kindref="member">t2_amplitudes</ref>.back();</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>E_electronic_correlation<sp/>=<sp/>environment.<ref refid="class_g_q_c_p_1_1_c_c_s_d_environment_1a70b4d4d2b5ea5557bd35a69d3beade56" kindref="member">electronic_energies</ref>.back();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>E_electronic_correlation<sp/>=<sp/>environment.<ref refid="class_g_q_c_p_1_1_c_c_s_d_environment_1aef79bf3441544306172ef243a0a3d9a0" kindref="member">correlation_energies</ref>.back();</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_q_c_model_1_1_c_c_d" kindref="compound">QCModel::CCD&lt;Scalar&gt;</ref><sp/>ccd_parameters<sp/>{T2};</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_q_c_structure" kindref="compound">QCStructure&lt;GQCP::QCModel::CCD&lt;Scalar&gt;</ref>&gt;({E_electronic_correlation},<sp/>{ccd_parameters});</highlight></codeline>
