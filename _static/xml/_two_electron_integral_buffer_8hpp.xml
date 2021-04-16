@@ -7,7 +7,7 @@
     <includedby refid="gqcp_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/gqcp.hpp</includedby>
     <includedby refid="_two_electron_integral_engine_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/TwoElectronIntegralEngine.hpp</includedby>
     <incdepgraph>
-      <node id="14">
+      <node id="12">
         <label>boost/algorithm/string.hpp</label>
       </node>
       <node id="1">
@@ -15,7 +15,7 @@
         <link refid="_two_electron_integral_buffer_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -24,13 +24,13 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="18">
         <label>string</label>
       </node>
-      <node id="17">
+      <node id="16">
         <label>unsupported/Eigen/CXX11/Tensor</label>
       </node>
-      <node id="15">
+      <node id="13">
         <label>fstream</label>
       </node>
       <node id="2">
@@ -38,7 +38,7 @@
         <link refid="_base_two_electron_integral_buffer_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -55,11 +55,13 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -68,7 +70,7 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="15">
         <label>vector</label>
       </node>
       <node id="8">
@@ -78,27 +80,20 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
       </node>
-      <node id="20">
+      <node id="19">
         <label>array</label>
       </node>
-      <node id="12">
+      <node id="11">
         <label>cstdlib</label>
       </node>
-      <node id="16">
+      <node id="14">
         <label>iostream</label>
       </node>
       <node id="10">
         <label>type_traits</label>
       </node>
-      <node id="11">
-        <label>complex</label>
-      </node>
-      <node id="18">
+      <node id="17">
         <label>algorithm</label>
       </node>
       <node id="5">
@@ -112,15 +107,15 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -555,7 +550,7 @@
 <codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>MARK:<sp/>Emplacement</highlight></codeline>
 <codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1a9b6526452a74be456a9e14589349c976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1a9b6526452a74be456a9e14589349c976" kindref="member">areIntegralsAllZero</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="77" refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1ac70d3f2791d4c3a581c91dcc0805d04d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1ac70d3f2791d4c3a581c91dcc0805d04d" kindref="member">areIntegralsAllZero</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88" refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1abf330db30b7b03925a41f7421047e34b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1a1bfe3f83601a888e03d5d71d928779c6" kindref="member">IntegralScalar</ref><sp/><ref refid="class_g_q_c_p_1_1_two_electron_integral_buffer_1abf330db30b7b03925a41f7421047e34b" kindref="member">value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>f1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>f2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>f3,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>f4)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We&apos;ll<sp/>access<sp/>the<sp/>component<sp/>first,<sp/>then<sp/>a<sp/>row-major<sp/>ordering<sp/>of<sp/>the<sp/>calculated<sp/>integrals.</highlight><highlight class="normal"></highlight></codeline>

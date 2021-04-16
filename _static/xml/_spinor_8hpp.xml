@@ -2,93 +2,51 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="_spinor_8hpp" kind="file" language="C++">
     <compoundname>Spinor.hpp</compoundname>
-    <includes refid="_linear_combination_8hpp" local="yes">Mathematical/Functions/LinearCombination.hpp</includes>
-    <includes refid="_spin_8hpp" local="yes">QuantumChemical/Spin.hpp</includes>
+    <includes refid="_evaluable_linear_combination_8hpp" local="yes">Mathematical/Functions/EvaluableLinearCombination.hpp</includes>
+    <includes refid="_spin_resolved_base_8hpp" local="yes">QuantumChemical/SpinResolvedBase.hpp</includes>
     <includedby refid="gqcp_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/gqcp.hpp</includedby>
     <includedby refid="_r_spin_orbital_basis_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/Basis/SpinorBasis/RSpinOrbitalBasis.hpp</includedby>
     <incdepgraph>
-      <node id="14">
-        <label>boost/algorithm/string.hpp</label>
-      </node>
-      <node id="6">
-        <label>Utilities/Eigen.hpp</label>
-        <link refid="_eigen_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
+      <node id="11">
         <label>boost/lexical_cast.hpp</label>
       </node>
-      <node id="3">
-        <label>Mathematical/Functions/ScalarFunction.hpp</label>
-        <link refid="_scalar_function_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
+      <node id="8">
         <label>boost/format.hpp</label>
       </node>
-      <node id="15">
-        <label>fstream</label>
-      </node>
-      <node id="19">
-        <label>Utilities/CRTP.hpp</label>
-        <link refid="_c_r_t_p_8hpp"/>
-      </node>
-      <node id="7">
-        <label>Eigen/Dense</label>
-      </node>
-      <node id="2">
-        <label>Mathematical/Functions/LinearCombination.hpp</label>
-        <link refid="_linear_combination_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>Mathematical/Representation/Matrix.hpp</label>
-        <link refid="_matrix_8hpp"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
+      <node id="14">
+        <label>QuantumChemical/SpinResolvedBase.hpp</label>
+        <link refid="_spin_resolved_base_8hpp"/>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-      </node>
-      <node id="9">
-        <label>Utilities/type_traits.hpp</label>
-        <link refid="type__traits_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>vector</label>
+      <node id="3">
+        <label>Mathematical/Functions/Function.hpp</label>
+        <link refid="_function_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-      <node id="8">
-        <label>Utilities/aliases.hpp</label>
-        <link refid="aliases_8hpp"/>
+      <node id="10">
+        <label>Utilities/CRTP.hpp</label>
+        <link refid="_c_r_t_p_8hpp"/>
+      </node>
+      <node id="2">
+        <label>Mathematical/Functions/EvaluableLinearCombination.hpp</label>
+        <link refid="_evaluable_linear_combination_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
@@ -97,32 +55,43 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="13">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>Utilities/type_traits.hpp</label>
+        <link refid="type__traits_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>Utilities/aliases.hpp</label>
+        <link refid="aliases_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
         <label>QuantumChemical/Spin.hpp</label>
         <link refid="_spin_8hpp"/>
       </node>
-      <node id="12">
+      <node id="16">
+        <label>array</label>
+      </node>
+      <node id="7">
         <label>cstdlib</label>
       </node>
-      <node id="16">
-        <label>iostream</label>
-      </node>
-      <node id="10">
+      <node id="6">
         <label>type_traits</label>
       </node>
-      <node id="11">
-        <label>complex</label>
-      </node>
-      <node id="5">
-        <label>Mathematical/Functions/CartesianDirection.hpp</label>
-        <link refid="_cartesian_direction_8hpp"/>
-      </node>
-      <node id="18">
+      <node id="9">
         <label>Mathematical/Functions/VectorSpaceArithmetic.hpp</label>
         <link refid="_vector_space_arithmetic_8hpp"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -130,7 +99,7 @@
         <link refid="_spinor_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -497,55 +466,26 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_linear_combination_8hpp" kindref="compound">Mathematical/Functions/LinearCombination.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_spin_8hpp" kindref="compound">QuantumChemical/Spin.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_evaluable_linear_combination_8hpp" kindref="compound">Mathematical/Functions/EvaluableLinearCombination.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_spin_resolved_base_8hpp" kindref="compound">QuantumChemical/SpinResolvedBase.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_g_q_c_p" kindref="compound">GQCP</ref><sp/>{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_Scalar,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_BasisFunction&gt;</highlight></codeline>
-<codeline lineno="33" refid="class_g_q_c_p_1_1_spinor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_q_c_p_1_1_spinor" kindref="compound">Spinor</ref><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="35" refid="class_g_q_c_p_1_1_spinor_1a4abf29637266f6dc20d395924218b3e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_spinor_1a4abf29637266f6dc20d395924218b3e8" kindref="member">Scalar</ref><sp/>=<sp/>_Scalar;</highlight></codeline>
-<codeline lineno="36" refid="class_g_q_c_p_1_1_spinor_1aea7615506c75779caae76136863bc152" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_spinor_1aea7615506c75779caae76136863bc152" kindref="member">BasisFunction</ref><sp/>=<sp/>_BasisFunction;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_g_q_c_p_1_1_spinor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_q_c_p_1_1_spinor" kindref="compound">Spinor</ref>:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_spin_resolved_base" kindref="compound">SpinResolvedBase</ref>&lt;EvaluableLinearCombination&lt;_Scalar,<sp/>_BasisFunction&gt;,<sp/>Spinor&lt;_Scalar,<sp/>_BasisFunction&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>scalar<sp/>representation<sp/>of<sp/>one<sp/>of<sp/>the<sp/>expansion<sp/>coefficients.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_g_q_c_p_1_1_spinor_1a4abf29637266f6dc20d395924218b3e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_spinor_1a4abf29637266f6dc20d395924218b3e8" kindref="member">Scalar</ref><sp/>=<sp/>_Scalar;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_q_c_p_1_1_linear_combination" kindref="compound">LinearCombination&lt;Scalar, BasisFunction&gt;</ref><sp/>alpha_component;<sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>alpha-component<sp/>of<sp/>the<sp/>spinor,<sp/>as<sp/>an<sp/>expansion<sp/>of<sp/>underlying<sp/>scalar<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_q_c_p_1_1_linear_combination" kindref="compound">LinearCombination&lt;Scalar, BasisFunction&gt;</ref><sp/>beta_component;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>beta-component<sp/>of<sp/>the<sp/>spinor,<sp/>as<sp/>an<sp/>expansion<sp/>of<sp/>underlying<sp/>scalar<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>type<sp/>of<sp/>the<sp/>underlying<sp/>basis<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_g_q_c_p_1_1_spinor_1aea7615506c75779caae76136863bc152" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_spinor_1aea7615506c75779caae76136863bc152" kindref="member">BasisFunction</ref><sp/>=<sp/>_BasisFunction;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>CONSTRUCTORS</highlight></codeline>
-<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="class_g_q_c_p_1_1_spinor_1a9aa32560219b9daf7c21b0d0538c3d27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_q_c_p_1_1_spinor_1a9aa32560219b9daf7c21b0d0538c3d27" kindref="member">Spinor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_linear_combination" kindref="compound">LinearCombination&lt;Scalar, BasisFunction&gt;</ref>&amp;<sp/>alpha_component,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_linear_combination" kindref="compound">LinearCombination&lt;Scalar, BasisFunction&gt;</ref>&amp;<sp/>beta_component)<sp/>:</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alpha_component<sp/>{alpha_component},</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>beta_component<sp/>{beta_component}<sp/>{}</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>PUBLIC<sp/>METHODS</highlight></codeline>
-<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="class_g_q_c_p_1_1_spinor_1a61d03f1a1c782bc5c293400feab5ae60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_linear_combination" kindref="compound">LinearCombination&lt;Scalar, BasisFunction&gt;</ref>&amp;<sp/><ref refid="class_g_q_c_p_1_1_spinor_1a61d03f1a1c782bc5c293400feab5ae60" kindref="member">component</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac6f590924cfbbf11847a4ce174fe6e4f" kindref="member">Spin</ref><sp/>sigma)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sigma)<sp/>{</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac6f590924cfbbf11847a4ce174fe6e4fa834333af336cb600f3164028970f7ac6" kindref="member">Spin::alpha</ref>:</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;alpha_component;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac6f590924cfbbf11847a4ce174fe6e4fa072822a43e425c974197a1c86efb36c5" kindref="member">Spin::beta</ref>:</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;beta_component;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>GQCP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>GQCP</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/__w/GQCP/GQCP/gqcp/include/Basis/SpinorBasis/Spinor.hpp"/>
   </compounddef>

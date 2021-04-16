@@ -28,20 +28,46 @@
         <childnode refid="34" relation="include">
         </childnode>
       </node>
-      <node id="83">
+      <node id="86">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFFockMatrixCalculation.hpp</label>
+        <link refid="_r_h_f_fock_matrix_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHF.hpp</label>
+        <link refid="_q_c_method_2_h_f_2_r_h_f_2_r_h_f_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
         <label>/__w/GQCP/GQCP/gqcp/src/Mathematical/Grid/CubicGrid.cpp</label>
         <link refid="_cubic_grid_8cpp"/>
       </node>
-      <node id="87">
+      <node id="95">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFFockMatrixDiagonalization.hpp</label>
+        <link refid="_u_h_f_fock_matrix_diagonalization_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
         <label>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized/FQMolecularHamiltonian.cpp</label>
         <link refid="_f_q_molecular_hamiltonian_8cpp"/>
       </node>
-      <node id="81">
+      <node id="103">
         <label>/__w/GQCP/GQCP/gqcp/include/Mathematical/Grid/WeightedGrid.hpp</label>
         <link refid="_weighted_grid_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
       </node>
       <node id="46">
@@ -52,7 +78,7 @@
         <label>/__w/GQCP/GQCP/gqcp/src/QCModel/Geminals/APIGGeminalCoefficients.cpp</label>
         <link refid="_a_p_i_g_geminal_coefficients_8cpp"/>
       </node>
-      <node id="79">
+      <node id="101">
         <label>/__w/GQCP/GQCP/gqcp/include/Molecule/Molecule.hpp</label>
         <link refid="_molecule_8hpp"/>
         <childnode refid="2" relation="include">
@@ -71,13 +97,13 @@
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="97" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="68">
@@ -96,12 +122,34 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
+      <node id="93">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFErrorCalculation.hpp</label>
+        <link refid="_u_h_f_error_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFFockMatrixDIIS.hpp</label>
+        <link refid="_u_h_f_fock_matrix_d_i_i_s_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
       <node id="59">
         <label>/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/Interfaces/LibintTwoElectronIntegralEngine.hpp</label>
         <link refid="_libint_two_electron_integral_engine_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHF.hpp</label>
+        <link refid="_q_c_method_2_h_f_2_u_h_f_2_u_h_f_8hpp"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="50">
@@ -118,6 +166,12 @@
         <childnode refid="53" relation="include">
         </childnode>
       </node>
+      <node id="82">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFSCFSolver.hpp</label>
+        <link refid="_r_h_f_s_c_f_solver_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
       <node id="9">
         <label>/__w/GQCP/GQCP/gqcp/include/Basis/SpinorBasis/GSpinorBasis.hpp</label>
         <link refid="_g_spinor_basis_8hpp"/>
@@ -132,7 +186,7 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="78">
+      <node id="100">
         <label>/__w/GQCP/GQCP/gqcp/include/Molecule/NuclearFramework.hpp</label>
         <link refid="_nuclear_framework_8hpp"/>
         <childnode refid="2" relation="include">
@@ -143,17 +197,19 @@
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="101" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
-      <node id="94">
+      <node id="115">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/NuclearRepulsionOperator.hpp</label>
         <link refid="_nuclear_repulsion_operator_8hpp"/>
-        <childnode refid="95" relation="include">
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -170,14 +226,24 @@
         <label>/__w/GQCP/GQCP/gqcp/src/QCMethod/OrbitalOptimization/JacobiOrbitalOptimizer.cpp</label>
         <link refid="_jacobi_orbital_optimizer_8cpp"/>
       </node>
-      <node id="80">
+      <node id="102">
         <label>/__w/GQCP/GQCP/gqcp/include/Mathematical/Grid/CubicGrid.hpp</label>
         <link refid="_cubic_grid_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
-        <childnode refid="83" relation="include">
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFDensityMatrixDamper.hpp</label>
+        <link refid="_r_h_f_density_matrix_damper_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="72">
@@ -197,9 +263,9 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="98" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
       </node>
       <node id="49">
@@ -218,7 +284,7 @@
         <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="77">
+      <node id="99">
         <label>/__w/GQCP/GQCP/gqcp/src/Basis/ScalarBasis/GTOShell.cpp</label>
         <link refid="_g_t_o_shell_8cpp"/>
       </node>
@@ -230,11 +296,11 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="119">
         <label>/__w/GQCP/GQCP/gqcp/src/Molecule/Nucleus.cpp</label>
         <link refid="_nucleus_8cpp"/>
       </node>
-      <node id="91">
+      <node id="112">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/NuclearAttractionOperator.hpp</label>
         <link refid="_nuclear_attraction_operator_8hpp"/>
         <childnode refid="2" relation="include">
@@ -251,7 +317,37 @@
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCModel/HF/RHF.hpp</label>
+        <link refid="_q_c_model_2_h_f_2_r_h_f_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
         <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
         </childnode>
       </node>
       <node id="35">
@@ -260,6 +356,14 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFDensityMatrixCalculation.hpp</label>
+        <link refid="_r_h_f_density_matrix_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="71">
@@ -281,30 +385,38 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="98" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="111">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/BaseNuclearOperator.hpp</label>
         <link refid="_base_nuclear_operator_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="91" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
       <node id="27">
         <label>/__w/GQCP/GQCP/gqcp/src/QCModel/Geminals/vAP1roG.cpp</label>
         <link refid="v_a_p1ro_g_8cpp"/>
+      </node>
+      <node id="85">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFErrorCalculation.hpp</label>
+        <link refid="_r_h_f_error_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
       </node>
       <node id="18">
         <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/Geminals/AP1roGLagrangianNewtonOrbitalOptimizer.hpp</label>
@@ -358,6 +470,20 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
+      <node id="94">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFFockMatrixCalculation.hpp</label>
+        <link refid="_u_h_f_fock_matrix_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFSCFSolver.hpp</label>
+        <link refid="_u_h_f_s_c_f_solver_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
       <node id="40">
         <label>/__w/GQCP/GQCP/gqcp/src/QCMethod/OrbitalOptimization/Localization/ERJacobiLocalizer.cpp</label>
         <link refid="_e_r_jacobi_localizer_8cpp"/>
@@ -368,6 +494,32 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFElectronicEnergyCalculation.hpp</label>
+        <link refid="_u_h_f_electronic_energy_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCModel/HF/UHF.hpp</label>
+        <link refid="_q_c_model_2_h_f_2_u_h_f_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
         </childnode>
       </node>
       <node id="19">
@@ -408,7 +560,29 @@
         <label>/__w/GQCP/GQCP/gqcp/src/QCMethod/OrbitalOptimization/BaseOrbitalOptimizer.cpp</label>
         <link refid="_base_orbital_optimizer_8cpp"/>
       </node>
-      <node id="86">
+      <node id="88">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFSCFEnvironment.hpp</label>
+        <link refid="_u_h_f_s_c_f_environment_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
         <label>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized/FQMolecularMagneticHamiltonian.cpp</label>
         <link refid="_f_q_molecular_magnetic_hamiltonian_8cpp"/>
       </node>
@@ -486,6 +660,10 @@
         <childnode refid="41" relation="include">
         </childnode>
       </node>
+      <node id="80">
+        <label>/__w/GQCP/GQCP/gqcp/src/Processing/Properties/RHFElectricalResponseSolver.cpp</label>
+        <link refid="_r_h_f_electrical_response_solver_8cpp"/>
+      </node>
       <node id="10">
         <label>/__w/GQCP/GQCP/gqcp/include/QCModel/CI/LinearExpansion.hpp</label>
         <link refid="_linear_expansion_8hpp"/>
@@ -512,11 +690,11 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="99">
+      <node id="120">
         <label>/__w/GQCP/GQCP/gqcp/src/Molecule/elements.cpp</label>
         <link refid="elements_8cpp"/>
       </node>
-      <node id="97">
+      <node id="118">
         <label>/__w/GQCP/GQCP/gqcp/src/Molecule/NuclearFramework.cpp</label>
         <link refid="_nuclear_framework_8cpp"/>
       </node>
@@ -524,7 +702,7 @@
         <label>/__w/GQCP/GQCP/gqcp/src/QCModel/Geminals/AP1roG.cpp</label>
         <link refid="_a_p1ro_g_8cpp"/>
       </node>
-      <node id="95">
+      <node id="116">
         <label>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized/NuclearRepulsionOperator.cpp</label>
         <link refid="_nuclear_repulsion_operator_8cpp"/>
       </node>
@@ -606,7 +784,7 @@
         <label>/__w/GQCP/GQCP/gqcp/src/QCMethod/Geminals/AP1roGJacobiOrbitalOptimizer.cpp</label>
         <link refid="_a_p1ro_g_jacobi_orbital_optimizer_8cpp"/>
       </node>
-      <node id="88">
+      <node id="97">
         <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/RMP2/RMP2.hpp</label>
         <link refid="_r_m_p2_8hpp"/>
         <childnode refid="2" relation="include">
@@ -648,7 +826,7 @@
         <childnode refid="58" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="117">
         <label>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized/BaseNuclearOperator.cpp</label>
         <link refid="_base_nuclear_operator_8cpp"/>
       </node>
@@ -658,6 +836,20 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/DiagonalRHFFockMatrixObjective.hpp</label>
+        <link refid="_diagonal_r_h_f_fock_matrix_objective_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFFockMatrixDIIS.hpp</label>
+        <link refid="_r_h_f_fock_matrix_d_i_i_s_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="12">
@@ -684,26 +876,26 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="93">
+      <node id="114">
         <label>/__w/GQCP/GQCP/gqcp/src/Operator/FirstQuantized/NuclearDipoleOperator.cpp</label>
         <link refid="_nuclear_dipole_operator_8cpp"/>
       </node>
-      <node id="85">
+      <node id="107">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/FQMolecularMagneticHamiltonian.hpp</label>
         <link refid="_f_q_molecular_magnetic_hamiltonian_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="92">
+      <node id="113">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/NuclearDipoleOperator.hpp</label>
         <link refid="_nuclear_dipole_operator_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
       </node>
       <node id="62">
@@ -714,7 +906,7 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="82">
+      <node id="104">
         <label>/__w/GQCP/GQCP/gqcp/src/Mathematical/Grid/WeightedGrid.cpp</label>
         <link refid="_weighted_grid_8cpp"/>
       </node>
@@ -726,7 +918,7 @@
         <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="89">
+      <node id="110">
         <label>/__w/GQCP/GQCP/gqcp/src/Molecule/Molecule.cpp</label>
         <link refid="_molecule_8cpp"/>
       </node>
@@ -780,7 +972,7 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="84">
+      <node id="106">
         <label>/__w/GQCP/GQCP/gqcp/include/Operator/FirstQuantized/FQMolecularHamiltonian.hpp</label>
         <link refid="_f_q_molecular_hamiltonian_8hpp"/>
         <childnode refid="2" relation="include">
@@ -791,9 +983,17 @@
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/RHF/RHFElectronicEnergyCalculation.hpp</label>
+        <link refid="_r_h_f_electronic_energy_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="56">
@@ -861,6 +1061,8 @@
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
       </node>
       <node id="43">
         <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/OrbitalOptimization/QCMethodNewtonOrbitalOptimizer.hpp</label>
@@ -896,6 +1098,14 @@
         <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>/__w/GQCP/GQCP/gqcp/include/QCMethod/HF/UHF/UHFDensityMatrixCalculation.hpp</label>
+        <link refid="_u_h_f_density_matrix_calculation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
         </childnode>
       </node>
       <node id="58">

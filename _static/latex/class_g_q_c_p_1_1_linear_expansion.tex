@@ -64,6 +64,10 @@ const \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_aeb2bd1a8561e0df24b438
 \item 
 double \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_a165ab1f366f554859e1d13eaf32488cf}{calculate\+Shannon\+Entropy}} () const
 \item 
+{\footnotesize template$<$typename Z  = ONVBasis$>$ }\\\mbox{\hyperlink{namespace_g_q_c_p_a006e5cafd5827d2685c9e0bb7e01cfa2}{enable\+\_\+if\+\_\+t}}$<$ std\+::is\+\_\+same$<$ Z, Spin\+Resolved\+ONVBasis $>$\+::value, double $>$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_a074f26826c5aa57916bd41bc29b2403c}{calculate\+Single\+Orbital\+Entropy}} (const size\+\_\+t orbital\+\_\+index) const
+\item 
+{\footnotesize template$<$typename Z  = ONVBasis$>$ }\\\mbox{\hyperlink{namespace_g_q_c_p_a006e5cafd5827d2685c9e0bb7e01cfa2}{enable\+\_\+if\+\_\+t}}$<$ std\+::is\+\_\+same$<$ Z, Seniority\+Zero\+ONVBasis $>$\+::value, double $>$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_af2b32d3c0ab3d577f2d7f958f0e0f038}{calculate\+Single\+Orbital\+Entropy}} (const size\+\_\+t orbital\+\_\+index) const
+\item 
 {\footnotesize template$<$typename Z  = ONVBasis$>$ }\\\mbox{\hyperlink{namespace_g_q_c_p_a006e5cafd5827d2685c9e0bb7e01cfa2}{enable\+\_\+if\+\_\+t}}$<$ std\+::is\+\_\+same$<$ Z, Spin\+Resolved\+ONVBasis $>$\+::value, void $>$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_a8658812e07c00b29e4fe91521a1557cc}{for\+Each}} (const std\+::function$<$ void(const double, const Spin\+Resolved\+ONV)$>$ \&callback) const
 \item 
 bool \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_a31abc84daa8f3799c88be8c13896e888}{is\+Approx}} (const \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion}{Linear\+Expansion}}$<$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion_aeb2bd1a8561e0df24b4389729ff5565b}{ONVBasis}} $>$ \&other, double tolerance=1e-\/10) const
@@ -276,6 +280,48 @@ double \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion}{GQCP\+::\+Linear\+Ex
 MARK\+: Entropy \begin{DoxyReturn}{Returns}
 The Shannon entropy (information content) of the wave function. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_g_q_c_p_1_1_linear_expansion_a074f26826c5aa57916bd41bc29b2403c}\label{class_g_q_c_p_1_1_linear_expansion_a074f26826c5aa57916bd41bc29b2403c}} 
+\index{GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}!calculateSingleOrbitalEntropy@{calculateSingleOrbitalEntropy}}
+\index{calculateSingleOrbitalEntropy@{calculateSingleOrbitalEntropy}!GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}}
+\doxysubsubsection{\texorpdfstring{calculateSingleOrbitalEntropy()}{calculateSingleOrbitalEntropy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+ONVBasis $>$ \\
+template$<$typename Z  = ONVBasis$>$ \\
+\mbox{\hyperlink{namespace_g_q_c_p_a006e5cafd5827d2685c9e0bb7e01cfa2}{enable\+\_\+if\+\_\+t}}$<$std\+::is\+\_\+same$<$Z, Spin\+Resolved\+ONVBasis$>$\+::value, double$>$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion}{GQCP\+::\+Linear\+Expansion}}$<$ \+\_\+\+ONVBasis $>$\+::calculate\+Single\+Orbital\+Entropy (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{orbital\+\_\+index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculate the single orbital entropy of the orbital at the selected index, from the spin-\/resolved 1-\/ and two-\/particle density matrix. The implementation is based on \href{https://doi.org/10.1002/qua.24832}{\texttt{ https\+://doi.\+org/10.\+1002/qua.\+24832}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orbital\+\_\+index} & The index of the orbital for which the single orbital entropy needs to be calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The single orbital entropy of the orbital at the specified index.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This version of this method is used when the linear expansion is based on a spin-\/resolved ONV basis. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_g_q_c_p_1_1_linear_expansion_af2b32d3c0ab3d577f2d7f958f0e0f038}\label{class_g_q_c_p_1_1_linear_expansion_af2b32d3c0ab3d577f2d7f958f0e0f038}} 
+\index{GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}!calculateSingleOrbitalEntropy@{calculateSingleOrbitalEntropy}}
+\index{calculateSingleOrbitalEntropy@{calculateSingleOrbitalEntropy}!GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}}
+\doxysubsubsection{\texorpdfstring{calculateSingleOrbitalEntropy()}{calculateSingleOrbitalEntropy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+ONVBasis $>$ \\
+template$<$typename Z  = ONVBasis$>$ \\
+\mbox{\hyperlink{namespace_g_q_c_p_a006e5cafd5827d2685c9e0bb7e01cfa2}{enable\+\_\+if\+\_\+t}}$<$std\+::is\+\_\+same$<$Z, Seniority\+Zero\+ONVBasis$>$\+::value, double$>$ \mbox{\hyperlink{class_g_q_c_p_1_1_linear_expansion}{GQCP\+::\+Linear\+Expansion}}$<$ \+\_\+\+ONVBasis $>$\+::calculate\+Single\+Orbital\+Entropy (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{orbital\+\_\+index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculate the single orbital entropy of the orbital at the selected index, from the spin-\/resolved 1-\/ and two-\/particle density matrix. The implementation is based on \href{https://doi.org/10.1002/qua.24832}{\texttt{ https\+://doi.\+org/10.\+1002/qua.\+24832}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orbital\+\_\+index} & The index of the orbital for which the single orbital entropy needs to be calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The single orbital entropy of the orbital at the specified index.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This version of this method is used when the linear expansion is based on a seniority-\/zero ONV basis. 
+\end{DoxyNote}
 \mbox{\Hypertarget{class_g_q_c_p_1_1_linear_expansion_a03116cc358fad0dcddd365c8327f7983}\label{class_g_q_c_p_1_1_linear_expansion_a03116cc358fad0dcddd365c8327f7983}} 
 \index{GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}!calculateSpinResolved1DM@{calculateSpinResolved1DM}}
 \index{calculateSpinResolved1DM@{calculateSpinResolved1DM}!GQCP::LinearExpansion$<$ \_ONVBasis $>$@{GQCP::LinearExpansion$<$ \_ONVBasis $>$}}

@@ -12,19 +12,19 @@
     <includedby refid="gqcp_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/gqcp.hpp</includedby>
     <includedby refid="_integral_engine_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/IntegralEngine.hpp</includedby>
     <incdepgraph>
-      <node id="15">
+      <node id="13">
         <label>boost/algorithm/string.hpp</label>
       </node>
-      <node id="34">
+      <node id="35">
         <label>iomanip</label>
       </node>
-      <node id="33">
+      <node id="34">
         <label>functional</label>
       </node>
-      <node id="36">
+      <node id="37">
         <label>Operator/FirstQuantized/BaseFQOperator.hpp</label>
         <link refid="_base_f_q_operator_8hpp"/>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -33,10 +33,10 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="41">
+      <node id="42">
         <label>boost/math/constants/constants.hpp</label>
       </node>
-      <node id="29">
+      <node id="30">
         <label>boost/lexical_cast.hpp</label>
       </node>
       <node id="1">
@@ -46,89 +46,79 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>Basis/Integrals/Primitive/McMurchieDavidsonCoefficient.hpp</label>
         <link refid="_mc_murchie_davidson_coefficient_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="25">
-        <label>Mathematical/Functions/ScalarFunction.hpp</label>
-        <link refid="_scalar_function_8hpp"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
+      <node id="22">
         <label>Mathematical/Functions/CartesianGTO.hpp</label>
         <link refid="_cartesian_g_t_o_8hpp"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>boost/format.hpp</label>
       </node>
-      <node id="38">
+      <node id="39">
         <label>numeric</label>
       </node>
-      <node id="40">
+      <node id="41">
         <label>Molecule/NuclearFramework.hpp</label>
         <link refid="_nuclear_framework_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>string</label>
       </node>
-      <node id="30">
+      <node id="31">
         <label>Molecule/Nucleus.hpp</label>
         <link refid="_nucleus_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="36">
         <label>Operator/FirstQuantized/NuclearAttractionOperator.hpp</label>
         <link refid="_nuclear_attraction_operator_8hpp"/>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="14">
         <label>fstream</label>
       </node>
       <node id="2">
@@ -137,16 +127,16 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>Molecule/elements.hpp</label>
         <link refid="elements_8hpp"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>Operator/FirstQuantized/BaseNuclearOperator.hpp</label>
         <link refid="_base_nuclear_operator_8hpp"/>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -155,26 +145,40 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="28">
-        <label>Utilities/CRTP.hpp</label>
-        <link refid="_c_r_t_p_8hpp"/>
-      </node>
-      <node id="8">
-        <label>Eigen/Dense</label>
-      </node>
-      <node id="24">
-        <label>Mathematical/Functions/LinearCombination.hpp</label>
-        <link refid="_linear_combination_8hpp"/>
-        <childnode refid="25" relation="include">
+      <node id="26">
+        <label>Mathematical/Functions/Function.hpp</label>
+        <link refid="_function_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
+      </node>
+      <node id="29">
+        <label>Utilities/CRTP.hpp</label>
+        <link refid="_c_r_t_p_8hpp"/>
+      </node>
+      <node id="25">
+        <label>Mathematical/Functions/EvaluableLinearCombination.hpp</label>
+        <link refid="_evaluable_linear_combination_8hpp"/>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Eigen/Dense</label>
       </node>
       <node id="5">
         <label>Mathematical/Representation/Matrix.hpp</label>
@@ -187,21 +191,23 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>Mathematical/Representation/DenseVectorizer.hpp</label>
         <link refid="_dense_vectorizer_8hpp"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -210,7 +216,7 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="16">
         <label>vector</label>
       </node>
       <node id="9">
@@ -220,67 +226,69 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>array</label>
       </node>
-      <node id="18">
+      <node id="17">
         <label>Basis/Integrals/Primitive/LondonHermiteCoulombIntegral.hpp</label>
         <link refid="_london_hermite_coulomb_integral_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="12">
         <label>cstdlib</label>
       </node>
-      <node id="17">
+      <node id="15">
         <label>iostream</label>
       </node>
       <node id="3">
         <label>cstddef</label>
       </node>
-      <node id="22">
+      <node id="18">
+        <label>Utilities/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
         <label>Mathematical/Functions/CartesianExponents.hpp</label>
         <link refid="_cartesian_exponents_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="11">
         <label>type_traits</label>
       </node>
-      <node id="12">
+      <node id="19">
         <label>complex</label>
       </node>
       <node id="6">
         <label>Mathematical/Functions/CartesianDirection.hpp</label>
         <link refid="_cartesian_direction_8hpp"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>Basis/ScalarBasis/GTOShell.hpp</label>
         <link refid="_g_t_o_shell_8hpp"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>Mathematical/Functions/VectorSpaceArithmetic.hpp</label>
         <link refid="_vector_space_arithmetic_8hpp"/>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -692,7 +700,7 @@
 <codeline lineno="46" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a4afc2d193bab6338b10e1065c88790c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a4afc2d193bab6338b10e1065c88790c4" kindref="member">Primitive</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Shell::Primitive;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>scalar<sp/>representation<sp/>of<sp/>a<sp/>nuclear<sp/>attraction<sp/>integral.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a20097cc8dec0886c09d628f002db3472" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a20097cc8dec0886c09d628f002db3472" kindref="member">IntegralScalar</ref><sp/>=<sp/><ref refid="namespace_g_q_c_p_1a09e1543a47643a7a62401aa600bb2e28" kindref="member">product_t&lt;NuclearAttractionOperator::Scalar, typename Primitive::Valued&gt;</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a0dae55679e2d691cc4c2408d027a2d21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a0dae55679e2d691cc4c2408d027a2d21" kindref="member">IntegralScalar</ref><sp/>=<sp/><ref refid="namespace_g_q_c_p_1a09e1543a47643a7a62401aa600bb2e28" kindref="member">product_t&lt;NuclearAttractionOperator::Scalar, typename Primitive::OutputType&gt;</ref>;</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -714,7 +722,7 @@
 <codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Z<sp/>=<sp/>Shell&gt;</highlight></codeline>
-<codeline lineno="82" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a2c42221c90f7aa1442eecc6245a40bcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, GTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a20097cc8dec0886c09d628f002db3472" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a2c42221c90f7aa1442eecc6245a40bcb" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="82" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a2c42221c90f7aa1442eecc6245a40bcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, GTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a0dae55679e2d691cc4c2408d027a2d21" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a2c42221c90f7aa1442eecc6245a40bcb" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>some<sp/>variables.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(left.<ref refid="class_g_q_c_p_1_1_cartesian_g_t_o_1af66a81bb7e711485be77a82a1521256b" kindref="member">cartesianExponents</ref>().<ref refid="struct_g_q_c_p_1_1_cartesian_exponents_1a311290fc4ae2e2fce7d21d2dbb8c3194" kindref="member">value</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>));</highlight></codeline>
@@ -777,7 +785,7 @@
 <codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Z<sp/>=<sp/>Shell&gt;</highlight></codeline>
-<codeline lineno="153" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1aa4c83d27329d45494fd4ad07abfadcff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, LondonGTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a20097cc8dec0886c09d628f002db3472" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1aa4c83d27329d45494fd4ad07abfadcff" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="153" refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1aa4c83d27329d45494fd4ad07abfadcff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, LondonGTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1a0dae55679e2d691cc4c2408d027a2d21" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_nuclear_attraction_integral_engine_1aa4c83d27329d45494fd4ad07abfadcff" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>some<sp/>variables.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(left.<ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o_1a5eb481aeee373774272b161714e9d453" kindref="member">cartesianGTO</ref>().<ref refid="class_g_q_c_p_1_1_cartesian_g_t_o_1af66a81bb7e711485be77a82a1521256b" kindref="member">cartesianExponents</ref>().<ref refid="struct_g_q_c_p_1_1_cartesian_exponents_1a311290fc4ae2e2fce7d21d2dbb8c3194" kindref="member">value</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>));</highlight></codeline>

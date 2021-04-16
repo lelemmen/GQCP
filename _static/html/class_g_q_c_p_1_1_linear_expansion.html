@@ -149,6 +149,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a10b0da70f8207fbb802a0f8f19cf64ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a165ab1f366f554859e1d13eaf32488cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_q_c_p_1_1_linear_expansion.html#a165ab1f366f554859e1d13eaf32488cf">calculateShannonEntropy</a> () const</td></tr>
 <tr class="separator:a165ab1f366f554859e1d13eaf32488cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074f26826c5aa57916bd41bc29b2403c"><td class="memTemplParams" colspan="2">template&lt;typename Z  = ONVBasis&gt; </td></tr>
+<tr class="memitem:a074f26826c5aa57916bd41bc29b2403c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_q_c_p.html#a006e5cafd5827d2685c9e0bb7e01cfa2">enable_if_t</a>&lt; std::is_same&lt; Z, SpinResolvedONVBasis &gt;::value, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_g_q_c_p_1_1_linear_expansion.html#a074f26826c5aa57916bd41bc29b2403c">calculateSingleOrbitalEntropy</a> (const size_t orbital_index) const</td></tr>
+<tr class="separator:a074f26826c5aa57916bd41bc29b2403c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b32d3c0ab3d577f2d7f958f0e0f038"><td class="memTemplParams" colspan="2">template&lt;typename Z  = ONVBasis&gt; </td></tr>
+<tr class="memitem:af2b32d3c0ab3d577f2d7f958f0e0f038"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_q_c_p.html#a006e5cafd5827d2685c9e0bb7e01cfa2">enable_if_t</a>&lt; std::is_same&lt; Z, SeniorityZeroONVBasis &gt;::value, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_g_q_c_p_1_1_linear_expansion.html#af2b32d3c0ab3d577f2d7f958f0e0f038">calculateSingleOrbitalEntropy</a> (const size_t orbital_index) const</td></tr>
+<tr class="separator:af2b32d3c0ab3d577f2d7f958f0e0f038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8658812e07c00b29e4fe91521a1557cc"><td class="memTemplParams" colspan="2">template&lt;typename Z  = ONVBasis&gt; </td></tr>
 <tr class="memitem:a8658812e07c00b29e4fe91521a1557cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_q_c_p.html#a006e5cafd5827d2685c9e0bb7e01cfa2">enable_if_t</a>&lt; std::is_same&lt; Z, SpinResolvedONVBasis &gt;::value, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_g_q_c_p_1_1_linear_expansion.html#a8658812e07c00b29e4fe91521a1557cc">forEach</a> (const std::function&lt; void(const double, const SpinResolvedONV)&gt; &amp;callback) const</td></tr>
 <tr class="separator:a8658812e07c00b29e4fe91521a1557cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -609,6 +615,84 @@ template&lt;typename _ONVBasis &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>MARK: Entropy </p><dl class="section return"><dt>Returns</dt><dd>The Shannon entropy (information content) of the wave function. </dd></dl>
+
+</div>
+</div>
+<a id="a074f26826c5aa57916bd41bc29b2403c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074f26826c5aa57916bd41bc29b2403c">&#9670;&nbsp;</a></span>calculateSingleOrbitalEntropy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ONVBasis &gt; </div>
+<div class="memtemplate">
+template&lt;typename Z  = ONVBasis&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_q_c_p.html#a006e5cafd5827d2685c9e0bb7e01cfa2">enable_if_t</a>&lt;std::is_same&lt;Z, SpinResolvedONVBasis&gt;::value, double&gt; <a class="el" href="class_g_q_c_p_1_1_linear_expansion.html">GQCP::LinearExpansion</a>&lt; _ONVBasis &gt;::calculateSingleOrbitalEntropy </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>orbital_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the single orbital entropy of the orbital at the selected index, from the spin-resolved 1- and two-particle density matrix. The implementation is based on <a href="https://doi.org/10.1002/qua.24832">https://doi.org/10.1002/qua.24832</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orbital_index</td><td>The index of the orbital for which the single orbital entropy needs to be calculated.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The single orbital entropy of the orbital at the specified index.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This version of this method is used when the linear expansion is based on a spin-resolved ONV basis. </dd></dl>
+
+</div>
+</div>
+<a id="af2b32d3c0ab3d577f2d7f958f0e0f038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b32d3c0ab3d577f2d7f958f0e0f038">&#9670;&nbsp;</a></span>calculateSingleOrbitalEntropy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ONVBasis &gt; </div>
+<div class="memtemplate">
+template&lt;typename Z  = ONVBasis&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_q_c_p.html#a006e5cafd5827d2685c9e0bb7e01cfa2">enable_if_t</a>&lt;std::is_same&lt;Z, SeniorityZeroONVBasis&gt;::value, double&gt; <a class="el" href="class_g_q_c_p_1_1_linear_expansion.html">GQCP::LinearExpansion</a>&lt; _ONVBasis &gt;::calculateSingleOrbitalEntropy </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>orbital_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the single orbital entropy of the orbital at the selected index, from the spin-resolved 1- and two-particle density matrix. The implementation is based on <a href="https://doi.org/10.1002/qua.24832">https://doi.org/10.1002/qua.24832</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orbital_index</td><td>The index of the orbital for which the single orbital entropy needs to be calculated.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The single orbital entropy of the orbital at the specified index.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This version of this method is used when the linear expansion is based on a seniority-zero ONV basis. </dd></dl>
 
 </div>
 </div>

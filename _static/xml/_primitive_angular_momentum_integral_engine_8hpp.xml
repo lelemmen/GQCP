@@ -12,37 +12,37 @@
     <includedby refid="gqcp_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/gqcp.hpp</includedby>
     <includedby refid="_integral_engine_8hpp" local="yes">/__w/GQCP/GQCP/gqcp/include/Basis/Integrals/IntegralEngine.hpp</includedby>
     <incdepgraph>
-      <node id="18">
+      <node id="16">
         <label>boost/algorithm/string.hpp</label>
       </node>
       <node id="49">
         <label>Operator/FirstQuantized/AngularMomentumOperator.hpp</label>
         <link refid="_angular_momentum_operator_8hpp"/>
-        <childnode refid="41" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="34">
         <label>iomanip</label>
       </node>
-      <node id="34">
+      <node id="33">
         <label>functional</label>
       </node>
-      <node id="38">
+      <node id="37">
         <label>Physical/HomogeneousMagneticField.hpp</label>
         <link refid="_homogeneous_magnetic_field_8hpp"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>Operator/FirstQuantized/BaseFQOperator.hpp</label>
         <link refid="_base_f_q_operator_8hpp"/>
-        <childnode refid="41" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -54,17 +54,17 @@
       <node id="44">
         <label>boost/math/constants/constants.hpp</label>
       </node>
-      <node id="30">
+      <node id="29">
         <label>boost/lexical_cast.hpp</label>
       </node>
       <node id="48">
         <label>Operator/FirstQuantized/LinearMomentumOperator.hpp</label>
         <link refid="_linear_momentum_operator_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -73,62 +73,44 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="43">
-        <label>Utilities/literals.hpp</label>
-        <link refid="literals_8hpp"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="26">
-        <label>Mathematical/Functions/ScalarFunction.hpp</label>
-        <link refid="_scalar_function_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
+      <node id="21">
         <label>Mathematical/Functions/CartesianGTO.hpp</label>
         <link refid="_cartesian_g_t_o_8hpp"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="26">
         <label>boost/format.hpp</label>
       </node>
-      <node id="42">
+      <node id="43">
         <label>numeric</label>
       </node>
-      <node id="33">
+      <node id="32">
         <label>string</label>
       </node>
-      <node id="31">
+      <node id="30">
         <label>Molecule/Nucleus.hpp</label>
         <link refid="_nucleus_8hpp"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="17">
         <label>fstream</label>
       </node>
       <node id="7">
@@ -137,10 +119,10 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="31">
         <label>Molecule/elements.hpp</label>
         <link refid="elements_8hpp"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -157,6 +139,16 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="25">
+        <label>Mathematical/Functions/Function.hpp</label>
+        <link refid="_function_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
       <node id="5">
         <label>Basis/Integrals/Primitive/PrimitiveElectronicDipoleIntegralEngine.hpp</label>
         <link refid="_primitive_electronic_dipole_integral_engine_8hpp"/>
@@ -164,9 +156,9 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
@@ -175,31 +167,35 @@
         <childnode refid="44" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="28">
         <label>Utilities/CRTP.hpp</label>
         <link refid="_c_r_t_p_8hpp"/>
+      </node>
+      <node id="24">
+        <label>Mathematical/Functions/EvaluableLinearCombination.hpp</label>
+        <link refid="_evaluable_linear_combination_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
       <node id="11">
         <label>Eigen/Dense</label>
       </node>
-      <node id="25">
-        <label>Mathematical/Functions/LinearCombination.hpp</label>
-        <link refid="_linear_combination_8hpp"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="39">
+      <node id="40">
         <label>Operator/FirstQuantized/OverlapOperator.hpp</label>
         <link refid="_overlap_operator_8hpp"/>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -213,21 +209,23 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
       </node>
-      <node id="41">
+      <node id="42">
         <label>Mathematical/Representation/DenseVectorizer.hpp</label>
         <link refid="_dense_vectorizer_8hpp"/>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -236,7 +234,7 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="19">
         <label>vector</label>
       </node>
       <node id="12">
@@ -246,21 +244,17 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
       </node>
-      <node id="37">
+      <node id="36">
         <label>Mathematical/Functions/LondonCartesianGTO.hpp</label>
         <link refid="_london_cartesian_g_t_o_8hpp"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -270,19 +264,17 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -296,53 +288,61 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>array</label>
-      </node>
-      <node id="45">
-        <label>Operator/FirstQuantized/ElectronicDipoleOperator.hpp</label>
-        <link refid="_electronic_dipole_operator_8hpp"/>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>cstdlib</label>
-      </node>
-      <node id="20">
-        <label>iostream</label>
-      </node>
-      <node id="4">
-        <label>cstddef</label>
-      </node>
-      <node id="36">
-        <label>Basis/ScalarBasis/LondonGTOShell.hpp</label>
-        <link refid="_london_g_t_o_shell_8hpp"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="23">
+        <label>array</label>
+      </node>
+      <node id="45">
+        <label>Operator/FirstQuantized/ElectronicDipoleOperator.hpp</label>
+        <link refid="_electronic_dipole_operator_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cstdlib</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="35">
+        <label>Basis/ScalarBasis/LondonGTOShell.hpp</label>
+        <link refid="_london_g_t_o_shell_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Utilities/complex.hpp</label>
+        <link refid="complex_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
         <label>Mathematical/Functions/CartesianExponents.hpp</label>
         <link refid="_cartesian_exponents_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="14">
@@ -359,36 +359,34 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="39">
         <label>complex</label>
       </node>
       <node id="3">
         <label>Mathematical/Functions/CartesianDirection.hpp</label>
         <link refid="_cartesian_direction_8hpp"/>
       </node>
-      <node id="21">
+      <node id="20">
         <label>Basis/ScalarBasis/GTOShell.hpp</label>
         <link refid="_g_t_o_shell_8hpp"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="27">
         <label>Mathematical/Functions/VectorSpaceArithmetic.hpp</label>
         <link refid="_vector_space_arithmetic_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -799,7 +797,7 @@
 <codeline lineno="45" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ad72efb4b7c06697ca1defe8fdb62f9b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ad72efb4b7c06697ca1defe8fdb62f9b7" kindref="member">Primitive</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Shell::Primitive;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>scalar<sp/>representation<sp/>of<sp/>an<sp/>angular<sp/>momentum<sp/>integral.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>=<sp/><ref refid="namespace_g_q_c_p_1a09e1543a47643a7a62401aa600bb2e28" kindref="member">product_t&lt;AngularMomentumOperator::Scalar, typename Primitive::Valued&gt;</ref>;</highlight></codeline>
+<codeline lineno="48" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>=<sp/><ref refid="namespace_g_q_c_p_1a09e1543a47643a7a62401aa600bb2e28" kindref="member">product_t&lt;AngularMomentumOperator::Scalar, typename Primitive::OutputType&gt;</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -822,7 +820,7 @@
 <codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Z<sp/>=<sp/>Shell&gt;</highlight></codeline>
-<codeline lineno="83" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a305ef2d2f3c8fd85f3b7751c7ad1c775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, GTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a305ef2d2f3c8fd85f3b7751c7ad1c775" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="83" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a305ef2d2f3c8fd85f3b7751c7ad1c775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, GTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a305ef2d2f3c8fd85f3b7751c7ad1c775" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_cartesian_g_t_o" kindref="compound">CartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>some<sp/>variables.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(left.<ref refid="class_g_q_c_p_1_1_cartesian_g_t_o_1af66a81bb7e711485be77a82a1521256b" kindref="member">cartesianExponents</ref>().<ref refid="struct_g_q_c_p_1_1_cartesian_exponents_1a311290fc4ae2e2fce7d21d2dbb8c3194" kindref="member">value</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>));</highlight></codeline>
@@ -856,11 +854,11 @@
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -869,11 +867,11 @@
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -882,11 +880,11 @@
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>S1.calculate1D(a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -900,7 +898,7 @@
 <codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Z<sp/>=<sp/>Shell&gt;</highlight></codeline>
-<codeline lineno="169" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ab07e13d6285124b97a2f3c507736416a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, LondonGTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ab07e13d6285124b97a2f3c507736416a" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="169" refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ab07e13d6285124b97a2f3c507736416a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_g_q_c_p_1a006e5cafd5827d2685c9e0bb7e01cfa2" kindref="member">enable_if_t&lt;std::is_same&lt;Z, LondonGTOShell&gt;::value</ref>,<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref>&gt;<sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1ab07e13d6285124b97a2f3c507736416a" kindref="member">calculate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o" kindref="compound">LondonCartesianGTO</ref>&amp;<sp/>right)<sp/>{</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>some<sp/>variables.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(left.<ref refid="class_g_q_c_p_1_1_london_cartesian_g_t_o_1a5eb481aeee373774272b161714e9d453" kindref="member">cartesianGTO</ref>().<ref refid="class_g_q_c_p_1_1_cartesian_g_t_o_1af66a81bb7e711485be77a82a1521256b" kindref="member">cartesianExponents</ref>().<ref refid="struct_g_q_c_p_1_1_cartesian_exponents_1a311290fc4ae2e2fce7d21d2dbb8c3194" kindref="member">value</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>));</highlight></codeline>
@@ -950,11 +948,11 @@
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>k_L_z,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>k_L_z,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>k_L_y,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>S1.calculate1D(k1_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>k_L_y,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>S1.calculate1D(k1_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n);</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(k1_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -963,11 +961,11 @@
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>k_L_x,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>k_L_x,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"></highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>);</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>k_L_z,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>S1.calculate1D(k1_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>k_L_z,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>S1.calculate1D(k1_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j);</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"></highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(k1_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -976,11 +974,11 @@
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a11d242b501b62c0182e98a9d516335f7" kindref="member">CartesianDirection::z</ref>:<sp/>{</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>k_L_y,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term1<sp/>=<sp/>-S1.calculate1D(k1_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>k_L_y,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"></highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T1.<ref refid="class_g_q_c_p_1_1_base_vector_primitive_integral_engine_1a766119a77e95306dfb88dbdd1095a684" kindref="member">prepareStateForComponent</ref>(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a2bb47fa9aafe67dde5d4e205193140b5" kindref="member">CartesianDirection::x</ref>);</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S1.prepareStateForComponent(<ref refid="namespace_g_q_c_p_1ac4c016a1668ae66892e5b4d8846613e8a8611d87f8dc5908d04f3d314c7c321b1" kindref="member">CartesianDirection::y</ref>);</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a8b18be46fe5ac76e999bc88f742e2ded" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>k_L_x,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>S1.calculate1D(k1_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_q_c_p_1_1_primitive_angular_momentum_integral_engine_1a0de81da4d51fed5721b67017880f55e3" kindref="member">IntegralScalar</ref><sp/>term2<sp/>=<sp/>-T1.<ref refid="class_g_q_c_p_1_1_primitive_linear_momentum_integral_engine_1a0069c872b7df287736b44575cd479020" kindref="member">calculate1D</ref>(k_K_x,<sp/>a,<sp/>K_x,<sp/>i,<sp/>k_L_x,<sp/>b,<sp/>L_x,<sp/>j)<sp/>*<sp/>S1.calculate1D(k1_y,<sp/>a,<sp/>K_y,<sp/>k,<sp/>b,<sp/>L_y,<sp/>l);</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
 <codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>S0.<ref refid="class_g_q_c_p_1_1_primitive_overlap_integral_engine_1a9edc7f130735ba38aa76edbcd65f9de5" kindref="member">calculate1D</ref>(k1_z,<sp/>a,<sp/>K_z,<sp/>m,<sp/>b,<sp/>L_z,<sp/>n)<sp/>*<sp/>(term1<sp/>-<sp/>term2);<sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>a<sp/>component<sp/>of<sp/>the<sp/>cross<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
